@@ -168,21 +168,28 @@ def save_history(history: Dict):
         json.dump(history, f, ensure_ascii=False, indent=2)
 
 
-def add_record(sector_indices: Dict[str, Dict], analysis_results: Dict):
-    """添加一条历史记录"""
+def add_record(sector_indices: Dict[str, Dict], analysis_results: Dict = None,
+               record_date: str = None):
+    """添加一条历史记录
+    
+    Args:
+        sector_indices: 各板块指数数据
+        analysis_results: 分析结果（保留兼容）
+        record_date: 记录日期 YYYY-MM-DD，默认当天
+    """
     history = load_history()
     
+    date_str = record_date or datetime.now().strftime("%Y-%m-%d")
     record = {
-        "date": datetime.now().strftime("%Y-%m-%d"),
+        "date": date_str,
         "timestamp": datetime.now().isoformat(),
         "sectors": sector_indices,
     }
     
-    # 如果今天已有记录，更新而非新增
-    today = record["date"]
-    existing = [r for r in history["records"] if r["date"] == today]
+    # 如果该日期已有记录，更新而非新增
+    existing = [r for r in history["records"] if r["date"] == date_str]
     if existing:
-        history["records"] = [r for r in history["records"] if r["date"] != today]
+        history["records"] = [r for r in history["records"] if r["date"] != date_str]
     
     history["records"].append(record)
     history["records"].sort(key=lambda r: r["date"])

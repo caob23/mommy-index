@@ -37,14 +37,25 @@ def _should_use_proxy() -> bool:
     return True
 
 
-def fetch_board(code: str) -> str:
-    """获取股吧页面HTML — 使用反检测请求头"""
-    url = f"https://guba.eastmoney.com/list,{code}.html"
+def fetch_board_page(code: str, page: int = 1) -> str:
+    """获取股吧指定页HTML — 使用反检测请求头
+    第1页: list,{code}.html
+    第2页起: list,{code}_{page}.html
+    """
+    if page <= 1:
+        url = f"https://guba.eastmoney.com/list,{code}.html"
+    else:
+        url = f"https://guba.eastmoney.com/list,{code}_{page}.html"
     headers = _ad.get_common_headers(referer="https://guba.eastmoney.com")
     proxies = PROXY if _should_use_proxy() else None
     resp = requests.get(url, headers=headers, proxies=proxies, timeout=15)
     resp.encoding = 'utf-8'
     return resp.text
+
+
+def fetch_board(code: str) -> str:
+    """获取股吧首页HTML（兼容旧接口）"""
+    return fetch_board_page(code, page=1)
 
 
 def parse_posts(html_content: str) -> List[Dict]:
@@ -94,20 +105,35 @@ def parse_posts(html_content: str) -> List[Dict]:
     return posts
 
 
-def collect_all() -> Dict[str, List[Dict]]:
-    """采集所有板块 — 带人类延迟防触发风控"""
+def collect_all(pages: int = 5) -> Dict[str, List[Dict]]:
+    """采集所有板块 — 支持翻页 + 人类延迟防触发风控
+    
+    Args:
+        pages: 每个板块翻页数，默认 5 页（约覆盖一个月的历史帖子）
+    """
     result = {}
     for sector_key, cfg in SECTORS.items():
-        try:
-            html = fetch_board(cfg["code"])
-            posts = parse_posts(html)
-            result[sector_key] = posts
-            print(f"  [{cfg['name']}] 采集到 {len(posts)} 条帖子")
-            # 板块之间加延迟
-            _ad.sleep_like_human("scroll")
-        except Exception as e:
-            print(f"  [{cfg['name']}] 采集失败: {e}")
-            result[sector_key] = []
+        all_posts = []
+        for page in range(1, pages + 1):
+            try:
+                html = fetch_board_page(cfg["code"], page)
+                posts = parse_posts(html)
+                if not posts:
+                    # 空页说明已到末尾，停止翻页
+                    print(f"  [{cfg['name']}] 第{page}页为空，停止翻页")
+                    break
+                all_posts.extend(posts)
+                print(f"  [{cfg['name']}] 第{page}页 采集到 {len(posts)} 条帖子")
+                # 页之间加延迟
+                if page < pages:
+                    _ad.sleep_like_human("scroll")
+            except Exception as e:
+                print(f"  [{cfg['name']}] 第{page}页 采集失败: {e}")
+                # 单页失败不中断，继续翻下一页
+        result[sector_key] = all_posts
+        print(f"  [{cfg['name']}] 翻页{min(page, pages)}页，共采集 {len(all_posts)} 条帖子")
+        # 板块之间加延迟
+        _ad.sleep_like_human("scroll")
     return result
 
 

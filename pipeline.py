@@ -64,20 +64,65 @@ def run_pipeline():
                 print(f"     [{r.level} {r.newbie_score}分] {r.title[:50]}...")
     
     # ===== 第3步: 指数计算 =====
-    print("\n📊 第3步: 指数计算")
+    print("\n📊 第3步: 指数计算（按日期分组）")
     
-    sector_indices = {}
+    # 按帖子日期分组，每个日期独立计算指数，积累多日历史数据
+    from collections import defaultdict
+    
+    # 将 analysis_results 按帖子日期分组
+    by_date = defaultdict(lambda: defaultdict(list))
     for sector, results in analysis_results.items():
-        result = compute_sector_index(results)
-        sector_indices[sector] = result
-        name = SECTOR_NAMES.get(sector, sector)
-        d = result["details"]
-        bar = "█" * int(result["index"] / 5) + "░" * (20 - int(result["index"] / 5))
-        print(f"  {name:6s} {bar} {result['index']:5.1f}  [{d['newbie_posts']}/{d['total_posts']}小白, {d['newbie_ratio']}%]")
+        for r in results:
+            # 从 timestamp 提取日期 (guba 格式: "MM-DD HH:MM" 或 "YYYY-MM-DD")
+            ts = r.timestamp
+            if ts and '-' in ts:
+                parts = ts.split('-')
+                if len(parts[0]) == 2:
+                    # "MM-DD HH:MM" → 补年份
+                    date_str = f"2026-{ts[:5]}"
+                elif len(ts) >= 10:
+                    date_str = ts[:10]
+                else:
+                    date_str = datetime.now().strftime("%Y-%m-%d")
+            else:
+                date_str = datetime.now().strftime("%Y-%m-%d")
+            by_date[date_str][sector].append(r)
     
-    # ===== 第4步: 存储历史 =====
-    print("\n💾 第4步: 存储历史记录")
-    add_record(sector_indices, analysis_results)
+    # 按日期排序
+    sorted_dates = sorted(by_date.keys())
+    
+    # 为每个日期计算指数并存入历史
+    for date_str in sorted_dates:
+        sector_indices = {}
+        for sector, results in by_date[date_str].items():
+            result = compute_sector_index(results)
+            sector_indices[sector] = result
+        
+        add_record(sector_indices, record_date=date_str)
+        name_preview = ", ".join(
+            f"{SECTOR_NAMES.get(s, s)}:{sector_indices[s]['index']}"
+            for s in sorted(sector_indices.keys())[:3]
+        )
+        total_posts = sum(len(v) for v in by_date[date_str].values())
+        print(f"  [{date_str}] {len(sector_indices)}板块 {total_posts}条帖子 → {name_preview}...")
+    
+    # 打印最终日期的详细指数（兼容原有输出格式）
+    latest_date = sorted_dates[-1] if sorted_dates else None
+    if latest_date:
+        final_indices = {
+            sector: compute_sector_index(analysis_results[sector])
+            for sector in analysis_results
+        }
+        print(f"\n  最新日期 [{latest_date}] 详情:")
+        for sector in sorted(analysis_results.keys()):
+            r = final_indices[sector]
+            name = SECTOR_NAMES.get(sector, sector)
+            d = r["details"]
+            bar = "█" * int(r["index"] / 5) + "░" * (20 - int(r["index"] / 5))
+            print(f"    {name:6s} {bar} {r['index']:5.1f}  [{d['newbie_posts']}/{d['total_posts']}小白, {d['newbie_ratio']}%]")
+    
+    # ===== 第4步: 存储历史（已完成，上文已按日期分组存储） =====
+    print(f"\n💾 第4步: 历史记录已存入 {len(sorted_dates)} 个日期")
     
     # ===== 第5步: 输出前端数据 =====
     dashboard = get_dashboard_data()
