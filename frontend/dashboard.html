@@ -52,6 +52,7 @@ body {
 .card.gold::before     { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
 .card.cpo::before      { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
 .card.semiconductor::before { background: linear-gradient(90deg, #10b981, #34d399); }
+.card.sp500::before   { background: linear-gradient(90deg, #06b6d4, #22d3ee); }
 
 .card .sector-name { font-size: 13px; color: #94a3b8; margin-bottom: 8px; }
 .card .index-value { font-size: 48px; font-weight: 800; margin-bottom: 4px; }
@@ -96,6 +97,13 @@ body {
   font-size: 13px;
 }
 .post-item:last-child { border-bottom: none; }
+.sector-section-title {
+  font-size: 15px;
+  color: #f59e0b;
+  margin: 16px 0 8px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #334155;
+}
 .post-item .post-title { color: #e2e8f0; margin-bottom: 4px; }
 .post-item .post-title a { color: #60a5fa; text-decoration: none; }
 .post-item .post-title a:hover { text-decoration: underline; }
@@ -323,35 +331,31 @@ function renderTopPosts(data) {
     return;
   }
 
-  // 从所有板块收集 top 小白帖
-  let allTop = [];
-  Object.entries(latest.sectors).forEach(([sector, sdata]) => {
-    (sdata.top_newbie_posts || []).forEach(p => {
-      allTop.push({ ...p, sector: SECTOR_NAMES[sector] });
-    });
-  });
-
-  // 按分数排序
-  allTop.sort((a, b) => b.score - a.score);
-  allTop = allTop.slice(0, 8);
-
-  if (!allTop.length) {
-    container.innerHTML += '<div class="loading">今日暂无典型小白帖</div>';
-    return;
-  }
-
+  // 按板块分组展示 top 小白帖
   const badgeClass = score => score >= 50 ? 'pure' : 'semi';
   const badgeText = score => score >= 50 ? '纯小白' : '偏小白';
 
-  container.innerHTML += allTop.map(p => {
-    const titleHtml = p.url 
-      ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>`
-      : p.title;
-    return `
+  let hasPosts = false;
+  Object.entries(latest.sectors).forEach(([sectorKey, sdata]) => {
+    let posts = (sdata.top_newbie_posts || []).slice(0, 8);
+    if (posts.length === 0) return;
+
+    // 按分数排序，取前8
+    posts.sort((a, b) => b.score - a.score);
+    posts = posts.slice(0, 8);
+
+    hasPosts = true;
+    const sectorName = SECTOR_NAMES[sectorKey] || sectorKey;
+    container.innerHTML += `<h3 class="sector-section-title">${sectorName}</h3>`;
+
+    container.innerHTML += posts.map(p => {
+      const titleHtml = p.url 
+        ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>`
+        : p.title;
+      return `
   <div class="post-item">
     <div class="post-title">
       <span class="post-badge ${badgeClass(p.score)}">${badgeText(p.score)} ${p.score}分</span>
-      <span style="color:#64748b;font-size:11px">[${p.sector}]</span>
       ${p.intent_label ? `<span style="font-size:11px;margin-left:4px">${p.intent_label}</span>` : ''}
       ${titleHtml}
     </div>
@@ -359,8 +363,13 @@ function renderTopPosts(data) {
     ${p.reasoning ? `<div class="post-reason">📝 ${p.reasoning}</div>` : ''}
     ${p.key_signals ? p.key_signals.map(s => `<div class="post-meta">▸ ${s}</div>`).join('') : ''}
   </div>
-    `;
-  }).join('');
+      `;
+    }).join('');
+  });
+
+  if (!hasPosts) {
+    container.innerHTML += '<div class="loading">今日暂无典型小白帖</div>';
+  }
 }
 
 // 加载数据

@@ -16,6 +16,7 @@ SECTORS = {
     "gold":       {"name": "黄金",     "code": "of518880", "etf": "518880"},
     "cpo":        {"name": "CPO通信",  "code": "of515880", "etf": "515880"},
     "semiconductor": {"name": "半导体", "code": "of512480", "etf": "512480"},
+    "sp500":      {"name": "标普500",  "code": "of513500", "etf": "513500"},
 }
 
 PROXY = {"http": "http://127.0.0.1:7890", "https": "http://127.0.0.1:7890"}

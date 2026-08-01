@@ -14,6 +14,7 @@ SECTOR_NAMES = {
     "gold": "黄金",
     "cpo": "CPO通信",
     "semiconductor": "半导体",
+    "sp500": "标普500",
 }
 
 
