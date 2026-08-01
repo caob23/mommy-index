@@ -1,104 +1,115 @@
 """
 ETF 价格采集器
-调用东方财富 K 线 API 获取历史日K收盘价
+优先腾讯财经 API，降级东方财富，兼容 GitHub Actions 网络环境
 """
-import os
 import random
-import time
 import requests
 from typing import Dict, List
 
-from .guba_collector import SECTORS, PROXY
+from .guba_collector import SECTORS
 
-# 模拟移动端/轻量请求头，避免网页导航头被风控拦截
+# 上证 ETF 代码前缀
+_SH_PREFIX = {"513100", "518880", "515880", "512480", "513500", "512800", "512690", "510300"}
+
 _USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
 ]
 
 
-def _should_use_proxy() -> bool:
-    if os.environ.get("GITHUB_ACTIONS") == "true":
-        return False
-    if os.environ.get("USE_PROXY") == "false":
-        return False
-    return True
-
-
-def _build_headers(referer: str = "https://quote.eastmoney.com/") -> Dict[str, str]:
-    """构造轻量 API 请求头，避免 Sec-Fetch-Dest:document 触发风控"""
+def _build_headers() -> Dict[str, str]:
     ua = random.choice(_USER_AGENTS)
-    version = ua.split("Chrome/")[1].split(".")[0]
     return {
         "User-Agent": ua,
         "Accept": "*/*",
         "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Referer": referer,
-        "Origin": "https://quote.eastmoney.com",
-        "Connection": "keep-alive",
-        "sec-ch-ua": f'"Not_A Brand";v="8", "Chromium";v="{version}", "Google Chrome";v="{version}"',
-        "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": '"Windows"',
+        "Accept-Encoding": "gzip, deflate",
     }
 
 
-def fetch_etf_kline(etf_code: str, lmt: int = 60, retries: int = 3) -> List[Dict]:
-    """获取 ETF 历史日K线数据
+def _symbol(etf_code: str) -> str:
+    """ETF 代码 → 行情符号（如 513100 → sh513100）"""
+    prefix = "sh" if etf_code in _SH_PREFIX else "sz"
+    return f"{prefix}{etf_code}"
 
-    Args:
-        etf_code: ETF 代码（如 "513100"）
-        lmt: 获取数据条数，默认 60 条（约 3 个月交易日）
-        retries: 重试次数，默认 3 次
 
-    Returns:
-        [{"date": "2026-08-01", "close": 1.234}, ...] 按日期升序
-    """
+def _fetch_tencent(symbol: str, lmt: int) -> List[Dict]:
+    """腾讯财经日K线（对 GitHub Actions 友好）"""
+    url = (
+        f"https://web.ifzq.gtimg.cn/appstock/app/fqkline/get"
+        f"?param={symbol},day,,,{lmt},qfq"
+    )
+    resp = requests.get(url, headers=_build_headers(), timeout=15)
+    resp.encoding = "utf-8"
+    data = resp.json()
+
+    if data.get("code") != 0:
+        raise ValueError(f"腾讯API返回code={data.get('code')}: {data.get('msg', '')}")
+
+    stock_data = data.get("data", {}).get(symbol, {})
+    klines = stock_data.get("qfqday") or stock_data.get("day", [])
+
+    result = []
+    for item in klines:
+        if len(item) >= 3:
+            result.append({"date": item[0], "close": float(item[2])})
+    result.sort(key=lambda x: x["date"])
+    return result
+
+
+def _fetch_eastmoney(etf_code: str, lmt: int) -> List[Dict]:
+    """东方财富日K线（本地环境使用，GitHub Actions 可能被拒）"""
     url = (
         f"https://push2his.eastmoney.com/api/qt/stock/kline/get"
         f"?secid=1.{etf_code}"
         f"&fields1=f1,f2,f3,f4"
         f"&fields2=f51,f52,f53,f54,f55,f56"
-        f"&klt=101"
-        f"&fqt=1"
-        f"&end=20500101"
-        f"&lmt={lmt}"
+        f"&klt=101&fqt=1&end=20500101&lmt={lmt}"
     )
+    headers = _build_headers()
+    headers["Referer"] = "https://quote.eastmoney.com/"
+    headers["Origin"] = "https://quote.eastmoney.com"
 
-    proxies = PROXY if _should_use_proxy() else None
-    last_error = None
+    resp = requests.get(url, headers=headers, timeout=15)
+    resp.encoding = "utf-8"
+    data = resp.json()
 
-    for attempt in range(retries):
-        try:
-            headers = _build_headers()
-            resp = requests.get(url, headers=headers, proxies=proxies, timeout=15)
-            resp.encoding = 'utf-8'
-            data = resp.json()
+    klines = data.get("data", {}).get("klines", [])
+    if not klines:
+        return []
 
-            klines = data.get("data", {}).get("klines", [])
-            if not klines:
-                return []
+    result = []
+    for line in klines:
+        parts = line.split(",")
+        if len(parts) >= 3:
+            result.append({"date": parts[0], "close": float(parts[2])})
+    result.sort(key=lambda x: x["date"])
+    return result
 
-            result = []
-            for line in klines:
-                parts = line.split(",")
-                if len(parts) >= 3:
-                    result.append({
-                        "date": parts[0],
-                        "close": float(parts[2]),
-                    })
 
-            result.sort(key=lambda x: x["date"])
-            return result
+def fetch_etf_kline(etf_code: str, lmt: int = 60) -> List[Dict]:
+    """获取 ETF 历史日K线，自动选择可用数据源
 
-        except Exception as e:
-            last_error = e
-            if attempt < retries - 1:
-                wait = 2 ** attempt + random.uniform(0, 1)
-                time.sleep(wait)
+    Args:
+        etf_code: ETF 代码（如 "513100"）
+        lmt: 获取数据条数，默认 60 条
 
-    raise last_error
+    Returns:
+        [{"date": "2026-08-01", "close": 1.234}, ...] 按日期升序
+    """
+    sym = _symbol(etf_code)
+
+    # 腾讯优先（GitHub Actions 可访问）
+    try:
+        return _fetch_tencent(sym, lmt)
+    except Exception as e_tx:
+        print(f"    腾讯API失败({e_tx})，尝试东方财富...")
+
+    # 降级东方财富
+    try:
+        return _fetch_eastmoney(etf_code, lmt)
+    except Exception as e_em:
+        raise RuntimeError(f"腾讯API与东方财富均失败: {e_em}")
 
 
 def collect_all() -> Dict[str, List[Dict]]:
