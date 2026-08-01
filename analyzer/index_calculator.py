@@ -197,13 +197,8 @@ def get_dashboard_data() -> Dict:
     # 最新一条
     latest = records[-1] if records else None
     
-    # 为每个板块准备历史曲线数据
-    sector_history = {
-        "nasdaq": [],
-        "gold": [],
-        "cpo": [],
-        "semiconductor": [],
-    }
+    # 为每个板块准备历史曲线数据（动态支持所有板块）
+    sector_history = {s: [] for s in SECTOR_NAMES}
     
     for r in records:
         for sector, data in r.get("sectors", {}).items():
