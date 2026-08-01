@@ -244,7 +244,7 @@ function renderCards(data) {
   }
 
   document.getElementById('update-time').textContent = 
-    `更新于 ${latest.date}`;
+    `更新于 ${latest.date}，每个交易日 16:00 自动刷新`;
 
   container.innerHTML = Object.entries(latest.sectors).map(([key, sector]) => {
     const cls = getSignalClass(sector.index);

@@ -53,10 +53,12 @@ def parse_posts(html_content: str) -> List[Dict]:
         r'<a[^>]*href="(/news,[^"]*)"[^>]*title="([^"]*)"[^>]*>',
         re.DOTALL
     )
-    read_pattern = re.compile(r'<cite[^>]*class="[^"]*l1[^"]*"[^>]*>(.*?)</cite>', re.DOTALL)
-    reply_pattern = re.compile(r'<cite[^>]*class="[^"]*l2[^"]*"[^>]*>(.*?)</cite>', re.DOTALL)
-    author_pattern = re.compile(r'<cite[^>]*class="[^"]*l4[^"]*"[^>]*>.*?<a[^>]*>(.*?)</a>', re.DOTALL)
-    date_pattern = re.compile(r'<cite[^>]*class="[^"]*l5[^"]*"[^>]*>(.*?)</cite>', re.DOTALL)
+    # 匹配 <cite> 和 <span>（股吧可能切换标签）
+    tag = r'(?:cite|span)'
+    read_pattern = re.compile(rf'<{tag}[^>]*class="[^"]*l1[^"]*"[^>]*>(.*?)</{tag}>', re.DOTALL)
+    reply_pattern = re.compile(rf'<{tag}[^>]*class="[^"]*l2[^"]*"[^>]*>(.*?)</{tag}>', re.DOTALL)
+    author_pattern = re.compile(rf'<{tag}[^>]*class="[^"]*l4[^"]*"[^>]*>.*?<a[^>]*>(.*?)</a>', re.DOTALL)
+    date_pattern = re.compile(rf'<{tag}[^>]*class="[^"]*l5[^"]*"[^>]*>(.*?)</{tag}>', re.DOTALL)
 
     titles = title_pattern.findall(html_content)
     reads = read_pattern.findall(html_content)
@@ -64,11 +66,20 @@ def parse_posts(html_content: str) -> List[Dict]:
     authors = author_pattern.findall(html_content)
     dates = date_pattern.findall(html_content)
 
+    # 跳过表头行（第一行是 "阅读/评论/标题/作者/最后更新"）
+    reads = reads[1:]
+    replies = replies[1:]
+    authors = authors[1:]
+    dates = dates[1:]
+
     posts = []
     for i, (url, title) in enumerate(titles):
         title = html_mod.unescape(title.strip())
         if not title or title == '点击开始搜索':
             continue
+        author = authors[i].strip() if i < len(authors) else "未知"
+        # 清理 HTML 标签（如 <font>xxx</font>）
+        author = re.sub(r'<[^>]+>', '', author)
         posts.append({
             "id": f"guba_{url.split(',')[-1].replace('.html','')}",
             "title": title,
