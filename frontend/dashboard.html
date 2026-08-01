@@ -53,6 +53,9 @@ body {
 .card.cpo::before      { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
 .card.semiconductor::before { background: linear-gradient(90deg, #10b981, #34d399); }
 .card.sp500::before   { background: linear-gradient(90deg, #06b6d4, #22d3ee); }
+.card.bank::before    { background: linear-gradient(90deg, #ef4444, #f87171); }
+.card.baijiu::before  { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.card.hs300::before   { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
 
 .card .sector-name { font-size: 13px; color: #94a3b8; margin-bottom: 8px; }
 .card .index-value { font-size: 48px; font-weight: 800; margin-bottom: 4px; }
@@ -128,6 +131,10 @@ body {
 .legend-dot.gold     { background: #fbbf24; }
 .legend-dot.cpo      { background: #a78bfa; }
 .legend-dot.semiconductor { background: #34d399; }
+.legend-dot.sp500   { background: #22d3ee; }
+.legend-dot.bank    { background: #f87171; }
+.legend-dot.baijiu  { background: #f59e0b; }
+.legend-dot.hs300   { background: #60a5fa; }
 
 .footer { text-align: center; padding: 32px; color: #475569; font-size: 12px; }
 
@@ -158,6 +165,10 @@ body {
     <div class="legend-item"><div class="legend-dot gold"></div>黄金</div>
     <div class="legend-item"><div class="legend-dot cpo"></div>CPO通信</div>
     <div class="legend-item"><div class="legend-dot semiconductor"></div>半导体</div>
+    <div class="legend-item"><div class="legend-dot sp500"></div>标普500</div>
+    <div class="legend-item"><div class="legend-dot bank"></div>银行</div>
+    <div class="legend-item"><div class="legend-dot baijiu"></div>白酒</div>
+    <div class="legend-item"><div class="legend-dot hs300"></div>沪深300</div>
   </div>
 
   <!-- 历史曲线 -->
@@ -166,6 +177,10 @@ body {
     <div class="chart-box"><h3>🥇 黄金 — 宝妈指数走势</h3><canvas id="chart-gold"></canvas></div>
     <div class="chart-box"><h3>🔌 CPO通信 — 宝妈指数走势</h3><canvas id="chart-cpo"></canvas></div>
     <div class="chart-box"><h3>💾 半导体 — 宝妈指数走势</h3><canvas id="chart-semiconductor"></canvas></div>
+    <div class="chart-box"><h3>🇺🇸 标普500 — 宝妈指数走势</h3><canvas id="chart-sp500"></canvas></div>
+    <div class="chart-box"><h3>🏦 银行 — 宝妈指数走势</h3><canvas id="chart-bank"></canvas></div>
+    <div class="chart-box"><h3>🍶 白酒 — 宝妈指数走势</h3><canvas id="chart-baijiu"></canvas></div>
+    <div class="chart-box"><h3>📊 沪深300 — 宝妈指数走势</h3><canvas id="chart-hs300"></canvas></div>
   </div>
 
   <!-- Top 小白帖 -->
@@ -186,14 +201,22 @@ const SECTOR_NAMES = {
   nasdaq: '纳斯达克',
   gold: '黄金', 
   cpo: 'CPO通信',
-  semiconductor: '半导体'
+  semiconductor: '半导体',
+  sp500: '标普500',
+  bank: '银行',
+  baijiu: '白酒',
+  hs300: '沪深300',
 };
 
 const SECTOR_COLORS = {
   nasdaq: '#06b6d4',
   gold: '#fbbf24',
   cpo: '#a78bfa',
-  semiconductor: '#34d399'
+  semiconductor: '#34d399',
+  sp500: '#22d3ee',
+  bank: '#f87171',
+  baijiu: '#f59e0b',
+  hs300: '#60a5fa',
 };
 
 function getSignalClass(idx) {

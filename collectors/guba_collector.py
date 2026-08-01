@@ -17,6 +17,9 @@ SECTORS = {
     "cpo":        {"name": "CPO通信",  "code": "of515880", "etf": "515880"},
     "semiconductor": {"name": "半导体", "code": "of512480", "etf": "512480"},
     "sp500":      {"name": "标普500",  "code": "of513500", "etf": "513500"},
+    "bank":       {"name": "银行",     "code": "of512800", "etf": "512800"},
+    "baijiu":     {"name": "白酒",     "code": "of512690", "etf": "512690"},
+    "hs300":      {"name": "沪深300",  "code": "of510300", "etf": "510300"},
 }
 
 PROXY = {"http": "http://127.0.0.1:7890", "https": "http://127.0.0.1:7890"}

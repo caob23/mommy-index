@@ -15,6 +15,9 @@ SECTOR_NAMES = {
     "cpo": "CPO通信",
     "semiconductor": "半导体",
     "sp500": "标普500",
+    "bank": "银行",
+    "baijiu": "白酒",
+    "hs300": "沪深300",
 }
 
 
