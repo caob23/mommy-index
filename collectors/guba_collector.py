@@ -27,11 +27,22 @@ PROXY = {"http": "http://127.0.0.1:7890", "https": "http://127.0.0.1:7890"}
 _ad = get_anti_detection()
 
 
+def _should_use_proxy() -> bool:
+    """判断是否使用本地代理：GitHub Actions 环境不走代理"""
+    import os
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        return False
+    if os.environ.get("USE_PROXY") == "false":
+        return False
+    return True
+
+
 def fetch_board(code: str) -> str:
     """获取股吧页面HTML — 使用反检测请求头"""
     url = f"https://guba.eastmoney.com/list,{code}.html"
     headers = _ad.get_common_headers(referer="https://guba.eastmoney.com")
-    resp = requests.get(url, headers=headers, proxies=PROXY, timeout=15)
+    proxies = PROXY if _should_use_proxy() else None
+    resp = requests.get(url, headers=headers, proxies=proxies, timeout=15)
     resp.encoding = 'utf-8'
     return resp.text
 
