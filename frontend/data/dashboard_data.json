@@ -1,7 +1,7 @@
 {
   "latest": {
     "date": "2026-08-01",
-    "timestamp": "2026-08-01T08:27:25.514061",
+    "timestamp": "2026-08-01T08:46:59.380848",
     "sectors": {
       "nasdaq": {
         "index": 20.0,
@@ -88,19 +88,19 @@
         ]
       },
       "cpo": {
-        "index": 28.4,
+        "index": 28.3,
         "interpretation": "🟢 正常区间 — 小白参与度适中，无需特别操作",
         "details": {
-          "total_posts": 21,
-          "valid_posts": 21,
+          "total_posts": 22,
+          "valid_posts": 22,
           "spam_posts": 0,
           "newbie_posts": 1,
           "pure_newbie": 0,
-          "newbie_ratio": 4.8,
+          "newbie_ratio": 4.5,
           "avg_newbie_score": 26.0,
           "avg_sentiment": 100.0,
           "purity_signal": 0.0,
-          "activity": 26.2,
+          "activity": 27.5,
           "mom_buy_index": 56.3,
           "mom_sell_index": 0.0,
           "buy_sell_ratio": 1.0,
@@ -362,7 +362,7 @@
       },
       {
         "date": "2026-08-01",
-        "index": 28.4
+        "index": 28.3
       }
     ],
     "semiconductor": [
