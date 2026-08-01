@@ -170,28 +170,4 @@ def interpret(idx):
 
 
 if __name__ == "__main__":
-    # 先跑真实采集
     dashboard = run_pipeline()
-    
-    # 如果历史数据不够，补充模拟数据
-    if dashboard["record_count"] < 5:
-        print("\n📝 历史数据不足，生成30天模拟数据用于前端展示...")
-        sample = generate_sample_history(30)
-        from analyzer.index_calculator import save_history
-        # 合并：保留真实数据，补充模拟历史
-        existing = dashboard.get("sector_history", {})
-        real_dates = set()
-        if dashboard["latest"]:
-            real_dates.add(dashboard["latest"]["date"])
-        
-        history = {"records": []}
-        for r in sample["records"]:
-            if r["date"] not in real_dates:
-                history["records"].append(r)
-        # 再加回真实记录
-        history["records"].extend([
-            r for r in sample["records"] if r["date"] in real_dates
-        ])
-        history["records"].sort(key=lambda r: r["date"])
-        save_history(history)
-        print(f"  已生成 {len(history['records'])} 天历史数据")

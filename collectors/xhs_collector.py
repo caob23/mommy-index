@@ -184,7 +184,7 @@ def _gen_sample_posts() -> Dict[str, List[Dict]]:
 
 
 def collect_all() -> Dict[str, List[Dict]]:
-    """采集所有板块的小红书数据。API不可用时使用模拟数据。"""
+    """采集所有板块的小红书数据。API不可用时返回空。"""
     if API_KEY:
         result = {}
         for sector_key, keywords in SEARCH_KEYWORDS.items():
@@ -202,11 +202,8 @@ def collect_all() -> Dict[str, List[Dict]]:
             print(f"  [小红书-{sector_key}] 采集到 {len(unique)} 条")
         return result
     else:
-        print("  ⚠️ 无 API Key，使用模拟小红书数据（26条）")
-        sample = _gen_sample_posts()
-        for sector, posts in sample.items():
-            print(f"  [小红书-模拟-{sector}] {len(posts)} 条")
-        return sample
+        print("  ⚠️ 无 API Key，跳过小红书采集（仅使用股吧数据）")
+        return {}
 
 if __name__ == "__main__":
     if not API_KEY:
