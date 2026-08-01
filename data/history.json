@@ -2,7 +2,7 @@
   "records": [
     {
       "date": "2026-07-04",
-      "timestamp": "2026-08-01T09:48:45.532435",
+      "timestamp": "2026-08-01T10:06:47.728746",
       "sectors": {
         "sp500": {
           "index": 0.0,
@@ -58,7 +58,7 @@
     },
     {
       "date": "2026-07-05",
-      "timestamp": "2026-08-01T09:48:45.541101",
+      "timestamp": "2026-08-01T10:06:47.754404",
       "sectors": {
         "sp500": {
           "index": 26.9,
@@ -217,7 +217,7 @@
     },
     {
       "date": "2026-07-06",
-      "timestamp": "2026-08-01T09:48:45.550055",
+      "timestamp": "2026-08-01T10:06:47.780809",
       "sectors": {
         "sp500": {
           "index": 0.0,
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-07-07",
-      "timestamp": "2026-08-01T09:48:45.558972",
+      "timestamp": "2026-08-01T10:06:47.807094",
       "sectors": {
         "sp500": {
           "index": 29.2,
@@ -488,7 +488,7 @@
     },
     {
       "date": "2026-07-08",
-      "timestamp": "2026-08-01T09:48:45.568364",
+      "timestamp": "2026-08-01T10:06:47.833009",
       "sectors": {
         "sp500": {
           "index": 29.9,
@@ -679,7 +679,7 @@
     },
     {
       "date": "2026-07-09",
-      "timestamp": "2026-08-01T09:48:45.577577",
+      "timestamp": "2026-08-01T10:06:47.859314",
       "sectors": {
         "sp500": {
           "index": 21.3,
@@ -852,7 +852,7 @@
     },
     {
       "date": "2026-07-10",
-      "timestamp": "2026-08-01T09:48:45.587476",
+      "timestamp": "2026-08-01T10:06:47.885752",
       "sectors": {
         "sp500": {
           "index": 24.2,
@@ -1013,7 +1013,7 @@
     },
     {
       "date": "2026-07-11",
-      "timestamp": "2026-08-01T09:48:45.597616",
+      "timestamp": "2026-08-01T10:06:47.912109",
       "sectors": {
         "sp500": {
           "index": 0.0,
@@ -1145,7 +1145,7 @@
     },
     {
       "date": "2026-07-12",
-      "timestamp": "2026-08-01T09:48:45.607714",
+      "timestamp": "2026-08-01T10:06:47.938024",
       "sectors": {
         "sp500": {
           "index": 0.0,
@@ -1241,7 +1241,7 @@
     },
     {
       "date": "2026-07-13",
-      "timestamp": "2026-08-01T09:48:45.617874",
+      "timestamp": "2026-08-01T10:06:47.964135",
       "sectors": {
         "sp500": {
           "index": 0.0,
@@ -1369,7 +1369,7 @@
     },
     {
       "date": "2026-07-14",
-      "timestamp": "2026-08-01T09:48:45.628354",
+      "timestamp": "2026-08-01T10:06:47.990180",
       "sectors": {
         "sp500": {
           "index": 7.7,
@@ -1596,7 +1596,7 @@
     },
     {
       "date": "2026-07-15",
-      "timestamp": "2026-08-01T09:48:45.638960",
+      "timestamp": "2026-08-01T10:06:48.016433",
       "sectors": {
         "sp500": {
           "index": 0.0,
@@ -1848,7 +1848,7 @@
     },
     {
       "date": "2026-07-16",
-      "timestamp": "2026-08-01T09:48:45.650167",
+      "timestamp": "2026-08-01T10:06:48.042815",
       "sectors": {
         "gold": {
           "index": 12.0,
@@ -2264,7 +2264,7 @@
     },
     {
       "date": "2026-07-17",
-      "timestamp": "2026-08-01T09:48:45.661664",
+      "timestamp": "2026-08-01T10:06:48.069126",
       "sectors": {
         "gold": {
           "index": 7.4,
@@ -2693,7 +2693,7 @@
     },
     {
       "date": "2026-07-18",
-      "timestamp": "2026-08-01T09:48:45.674000",
+      "timestamp": "2026-08-01T10:06:48.095257",
       "sectors": {
         "gold": {
           "index": 31.9,
@@ -3029,7 +3029,7 @@
     },
     {
       "date": "2026-07-19",
-      "timestamp": "2026-08-01T09:48:45.686410",
+      "timestamp": "2026-08-01T10:06:48.120960",
       "sectors": {
         "gold": {
           "index": 8.8,
@@ -3376,7 +3376,7 @@
     },
     {
       "date": "2026-07-20",
-      "timestamp": "2026-08-01T09:48:45.699829",
+      "timestamp": "2026-08-01T10:06:48.146582",
       "sectors": {
         "gold": {
           "index": 17.1,
@@ -3811,7 +3811,7 @@
     },
     {
       "date": "2026-07-21",
-      "timestamp": "2026-08-01T09:48:45.713204",
+      "timestamp": "2026-08-01T10:06:48.172512",
       "sectors": {
         "gold": {
           "index": 0.0,
@@ -4293,7 +4293,7 @@
     },
     {
       "date": "2026-07-22",
-      "timestamp": "2026-08-01T09:48:45.727524",
+      "timestamp": "2026-08-01T10:06:48.198043",
       "sectors": {
         "gold": {
           "index": 8.0,
@@ -4724,7 +4724,7 @@
     },
     {
       "date": "2026-07-23",
-      "timestamp": "2026-08-01T09:48:45.741860",
+      "timestamp": "2026-08-01T10:06:48.222912",
       "sectors": {
         "gold": {
           "index": 11.7,
@@ -5174,7 +5174,7 @@
     },
     {
       "date": "2026-07-24",
-      "timestamp": "2026-08-01T09:48:45.757167",
+      "timestamp": "2026-08-01T10:06:48.254130",
       "sectors": {
         "gold": {
           "index": 19.8,
@@ -5672,7 +5672,7 @@
     },
     {
       "date": "2026-07-25",
-      "timestamp": "2026-08-01T09:48:45.772608",
+      "timestamp": "2026-08-01T10:06:48.279413",
       "sectors": {
         "gold": {
           "index": 30.5,
@@ -6049,7 +6049,7 @@
     },
     {
       "date": "2026-07-26",
-      "timestamp": "2026-08-01T09:48:45.789010",
+      "timestamp": "2026-08-01T10:06:48.304692",
       "sectors": {
         "gold": {
           "index": 29.9,
@@ -6431,7 +6431,7 @@
     },
     {
       "date": "2026-07-27",
-      "timestamp": "2026-08-01T09:48:45.805415",
+      "timestamp": "2026-08-01T10:06:48.331066",
       "sectors": {
         "gold": {
           "index": 31.6,
@@ -6852,22 +6852,22 @@
     },
     {
       "date": "2026-07-28",
-      "timestamp": "2026-08-01T09:48:45.823291",
+      "timestamp": "2026-08-01T10:06:48.357796",
       "sectors": {
         "nasdaq": {
-          "index": 15.0,
+          "index": 15.5,
           "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
           "details": {
-            "total_posts": 21,
-            "valid_posts": 21,
+            "total_posts": 20,
+            "valid_posts": 20,
             "spam_posts": 0,
             "newbie_posts": 5,
             "pure_newbie": 0,
-            "newbie_ratio": 23.8,
+            "newbie_ratio": 25.0,
             "avg_newbie_score": 22.0,
             "avg_sentiment": 0.0,
             "purity_signal": 0.0,
-            "activity": 26.2,
+            "activity": 25.0,
             "mom_buy_index": 0.0,
             "mom_sell_index": 0.0,
             "buy_sell_ratio": 0.0,
@@ -7717,7 +7717,7 @@
     },
     {
       "date": "2026-07-29",
-      "timestamp": "2026-08-01T09:48:45.841462",
+      "timestamp": "2026-08-01T10:06:48.383829",
       "sectors": {
         "nasdaq": {
           "index": 18.6,
@@ -8735,7 +8735,7 @@
     },
     {
       "date": "2026-07-30",
-      "timestamp": "2026-08-01T09:48:45.861601",
+      "timestamp": "2026-08-01T10:06:48.409792",
       "sectors": {
         "nasdaq": {
           "index": 16.8,
@@ -8941,7 +8941,7 @@
             {
               "title": "明天高开2%",
               "url": "https://guba.eastmoney.com/news,sz159941,1752199806.html",
-              "timestamp": "07-30 22:07",
+              "timestamp": "07-30 21:43",
               "score": 10.0,
               "level": "偏专业",
               "reasoning": "帖子「明天高开2%...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
@@ -9138,16 +9138,18 @@
           "top_newbie_posts": [],
           "latest_posts": [
             {
-              "title": "晒一晒操作记录，有没有一起拿着的？",
-              "url": "https://guba.eastmoney.com/news,yyhd,1752962039.html",
+              "title": "$半导体ETF国联安(SH512480)$",
+              "url": "https://guba.eastmoney.com/news,sh512480,1753020456.html",
               "timestamp": "07-30 12:51",
-              "score": 18.0,
-              "level": "偏专业",
-              "reasoning": "帖子「晒一晒操作记录，有没有一起拿着的？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+              "score": 0,
+              "level": "专业投资者",
+              "reasoning": "帖子「$半导体ETF国联安(SH512480)$...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
               "sentiment": 0.0,
               "intent": "neutral",
               "intent_label": "⚪ 观望",
-              "key_signals": []
+              "key_signals": [
+                "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
+              ]
             }
           ]
         },
@@ -9962,7 +9964,7 @@
     },
     {
       "date": "2026-07-31",
-      "timestamp": "2026-08-01T09:48:45.882535",
+      "timestamp": "2026-08-01T10:06:48.435514",
       "sectors": {
         "nasdaq": {
           "index": 16.0,
@@ -10654,8 +10656,8 @@
           "index": 18.9,
           "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
           "details": {
-            "total_posts": 360,
-            "valid_posts": 360,
+            "total_posts": 359,
+            "valid_posts": 359,
             "spam_posts": 0,
             "newbie_posts": 69,
             "pure_newbie": 1,
@@ -11715,7 +11717,7 @@
     },
     {
       "date": "2026-08-01",
-      "timestamp": "2026-08-01T09:48:45.928147",
+      "timestamp": "2026-08-01T10:06:48.486597",
       "sectors": {
         "nasdaq": {
           "index": 16.4,
@@ -11853,6 +11855,18 @@
           ],
           "latest_posts": [
             {
+              "title": "我来啦，宝宝",
+              "url": "https://guba.eastmoney.com/news,sz159941,1753020245.html",
+              "timestamp": "08-01 17:58",
+              "score": 10.0,
+              "level": "偏专业",
+              "reasoning": "帖子「我来啦，宝宝...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+              "sentiment": 0.0,
+              "intent": "neutral",
+              "intent_label": "⚪ 观望",
+              "key_signals": []
+            },
+            {
               "title": "加仓干就对了，年底纳斯达克指数上3W点以上。QQQI是非常不错的一个美股基金",
               "url": "https://guba.eastmoney.com/news,sz159941,1752248238.html",
               "timestamp": "08-01 16:57",
@@ -11939,18 +11953,6 @@
               "key_signals": [
                 "「数据引用」引用具体数据/财报/宏观经济指标 (命中: 美联储)"
               ]
-            },
-            {
-              "title": "外汇额度太吃紧了，那些主动基豆带了好多A股，这个纳指被动基成了香饽饽",
-              "url": "https://guba.eastmoney.com/news,sz159941,1752998008.html",
-              "timestamp": "08-01 11:47",
-              "score": 10.0,
-              "level": "偏专业",
-              "reasoning": "帖子「外汇额度太吃紧了，那些主动基豆带了好多A股，这个纳指被动基成了香饽饽...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-              "sentiment": 0.0,
-              "intent": "neutral",
-              "intent_label": "⚪ 观望",
-              "key_signals": []
             }
           ]
         },
@@ -12568,6 +12570,18 @@
           ],
           "latest_posts": [
             {
+              "title": "晒一晒操作记录，有没有一起拿着的？",
+              "url": "https://guba.eastmoney.com/news,yyhd,1752962039.html",
+              "timestamp": "08-01 18:01",
+              "score": 18.0,
+              "level": "偏专业",
+              "reasoning": "帖子「晒一晒操作记录，有没有一起拿着的？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+              "sentiment": 0.0,
+              "intent": "neutral",
+              "intent_label": "⚪ 观望",
+              "key_signals": []
+            },
+            {
               "title": "跟风晒一下我的ETF操作",
               "url": "https://guba.eastmoney.com/news,yyhd,1753008550.html",
               "timestamp": "08-01 17:44",
@@ -12656,18 +12670,6 @@
               "key_signals": [
                 "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
               ]
-            },
-            {
-              "title": "美股看，全是互联网软件公司大涨。半导体公司基本上熄火，方向变了",
-              "url": "https://guba.eastmoney.com/news,sh512480,1752986554.html",
-              "timestamp": "08-01 12:31",
-              "score": 10.0,
-              "level": "偏专业",
-              "reasoning": "帖子「美股看，全是互联网软件公司大涨。半导体公司基本上熄火，方向变了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-              "sentiment": 0.0,
-              "intent": "neutral",
-              "intent_label": "⚪ 观望",
-              "key_signals": []
             }
           ]
         },
