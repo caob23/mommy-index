@@ -135,6 +135,21 @@ def compute_sector_index(analysis_results: List) -> Dict:
             }
             for r in sorted(newbie_posts, key=lambda x: x.newbie_score, reverse=True)[:8]
         ],
+        "latest_posts": [
+            {
+                "title": r.title[:60],
+                "url": r.url,
+                "timestamp": r.timestamp,
+                "score": r.newbie_score,
+                "level": r.level,
+                "reasoning": r.reasoning[:150],
+                "sentiment": r.sentiment_score,
+                "intent": r.intent,
+                "intent_label": {"buy": "🟢 买入", "sell": "🔴 卖出", "neutral": "⚪ 观望"}.get(r.intent, ""),
+                "key_signals": r.key_signals[:2],
+            }
+            for r in sorted(analysis_results, key=lambda x: x.timestamp or "", reverse=True)[:8]
+        ],
     }
 
 
@@ -215,8 +230,16 @@ def get_dashboard_data() -> Dict:
                     "index": data["index"],
                 })
     
+    # 加载 ETF 价格数据
+    etf_prices = {}
+    etf_file = os.path.join(DATA_DIR, "etf_prices.json")
+    if os.path.exists(etf_file):
+        with open(etf_file, 'r', encoding='utf-8') as f:
+            etf_prices = json.load(f)
+    
     return {
         "latest": latest,
         "sector_history": sector_history,
         "record_count": len(records),
+        "etf_prices": etf_prices,
     }

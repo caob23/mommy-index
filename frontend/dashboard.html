@@ -287,36 +287,75 @@ function renderCards(data) {
 
 function renderCharts(data) {
   const history = data.sector_history || {};
-  
+  const etfPrices = data.etf_prices || {};
+
   Object.entries(history).forEach(([sector, records]) => {
     const canvasId = `chart-${sector}`;
     const canvas = document.getElementById(canvasId);
     if (!canvas || !records.length) return;
-    
+
     const ctx = canvas.getContext('2d');
     const color = SECTOR_COLORS[sector] || '#94a3b8';
-    
+
+    // ETF 价格对齐：按日期取收盘价
+    const etfData = etfPrices[sector] || [];
+    const priceMap = {};
+    etfData.forEach(p => { priceMap[p.date] = p.close; });
+    const prices = records.map(r => priceMap[r.date] || null);
+
+    // 右轴范围：实际价格上下 10% 余量
+    const validPrices = prices.filter(p => p !== null);
+    let y1Min, y1Max;
+    if (validPrices.length >= 2) {
+      const pMin = Math.min(...validPrices);
+      const pMax = Math.max(...validPrices);
+      const pad = (pMax - pMin) * 0.1 || pMax * 0.02;
+      y1Min = pMin - pad;
+      y1Max = pMax + pad;
+    }
+
     new Chart(ctx, {
       type: 'line',
       data: {
         labels: records.map(r => r.date.slice(5)), // MM-DD
-        datasets: [{
-          label: SECTOR_NAMES[sector],
-          data: records.map(r => r.index),
-          borderColor: color,
-          backgroundColor: color + '20',
-          borderWidth: 2,
-          fill: true,
-          tension: 0.3,
-          pointRadius: 2,
-          pointHoverRadius: 5,
-        }]
+        datasets: [
+          {
+            label: SECTOR_NAMES[sector] + ' 指数',
+            data: records.map(r => r.index),
+            borderColor: color,
+            backgroundColor: color + '20',
+            borderWidth: 2,
+            fill: true,
+            tension: 0.3,
+            pointRadius: 2,
+            pointHoverRadius: 5,
+            yAxisID: 'y',
+          },
+          {
+            label: SECTOR_NAMES[sector] + ' ETF',
+            data: prices,
+            borderColor: '#64748b',
+            backgroundColor: '#64748b15',
+            borderWidth: 1.5,
+            borderDash: [4, 4],
+            fill: false,
+            tension: 0.3,
+            pointRadius: 1,
+            pointHoverRadius: 3,
+            yAxisID: 'y1',
+            spanGaps: false,
+          }
+        ]
       },
       options: {
         responsive: true,
         maintainAspectRatio: true,
         plugins: {
-          legend: { display: false },
+          legend: {
+            display: true,
+            position: 'top',
+            labels: { color: '#94a3b8', font: { size: 11 }, usePointStyle: true, padding: 12 }
+          },
           tooltip: {
             backgroundColor: '#1e293b',
             titleColor: '#e2e8f0',
@@ -324,23 +363,33 @@ function renderCharts(data) {
             borderColor: '#334155',
             borderWidth: 1,
             callbacks: {
-              label: ctx => `宝妈指数: ${ctx.parsed.y}`
+              label: ctx => {
+                if (ctx.dataset.yAxisID === 'y') return `宝妈指数: ${ctx.parsed.y}`;
+                return ctx.parsed.y != null ? `ETF: ${ctx.parsed.y.toFixed(3)}` : 'ETF: -';
+              }
             }
           }
         },
         scales: {
           y: {
             min: 0, max: 100,
+            ticks: { stepSize: 10, color: '#64748b' },
             grid: { color: '#33415533' },
-            ticks: { color: '#64748b', callback: v => v },
+            title: { display: true, text: '指数', color: '#64748b' }
+          },
+          y1: {
+            position: 'right',
+            min: y1Min,
+            max: y1Max,
+            grid: { drawOnChartArea: false },
+            ticks: { color: '#64748b', callback: v => v != null ? v.toFixed(3) : '' },
+            title: { display: true, text: '价格', color: '#64748b' }
           },
           x: {
             grid: { color: '#33415533' },
             ticks: { color: '#64748b', maxTicksLimit: 10 },
           }
         },
-        // 危险区间背景
-        // 通过 annotation 插件可以实现，这里保持简洁
       }
     });
   });
@@ -354,18 +403,50 @@ function renderTopPosts(data) {
     return;
   }
 
-  // 按板块分组展示 top 小白帖
   const badgeClass = score => score >= 50 ? 'pure' : 'semi';
   const badgeText = score => score >= 50 ? '纯小白' : '偏小白';
+  const now = new Date();
+  const H48 = 48 * 60 * 60 * 1000;
+
+  const parseTs = (ts) => {
+    if (!ts) return null;
+    // "MM-DD HH:MM" 格式（股吧）
+    if (/^\d{2}-\d{2}/.test(ts)) {
+      const [datePart, timePart] = ts.split(' ');
+      const [mm, dd] = datePart.split('-');
+      const [hh, min] = (timePart || '00:00').split(':');
+      return new Date(2026, mm - 1, dd, hh || 0, min || 0);
+    }
+    // "YYYY-MM-DD" 格式
+    if (/^\d{4}-\d{2}-\d{2}/.test(ts)) {
+      return new Date(ts);
+    }
+    return null;
+  };
 
   let hasPosts = false;
   Object.entries(latest.sectors).forEach(([sectorKey, sdata]) => {
-    let posts = (sdata.top_newbie_posts || []).slice(0, 8);
-    if (posts.length === 0) return;
+    const topPosts = sdata.top_newbie_posts || [];
 
-    // 按分数排序，取前8
+    let posts;
+    if (topPosts.length >= 8) {
+      // 充足：只保留 48 小时内
+      posts = topPosts.filter(p => {
+        const t = parseTs(p.timestamp);
+        return t && (now - t) <= H48;
+      });
+    } else {
+      // 不足：latest_posts 降级补充
+      const latestPosts = sdata.latest_posts || [];
+      const urls = new Set(topPosts.map(p => p.url));
+      const extra = latestPosts.filter(p => !urls.has(p.url));
+      posts = [...topPosts, ...extra];
+    }
+
+    // 按典型程度（分数）排序，取前 8
     posts.sort((a, b) => b.score - a.score);
     posts = posts.slice(0, 8);
+    if (posts.length === 0) return;
 
     hasPosts = true;
     const sectorName = SECTOR_NAMES[sectorKey] || sectorKey;

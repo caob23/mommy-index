@@ -125,6 +125,15 @@ def run_pipeline():
         top_count = len(r.get("top_newbie_posts", []))
         print(f"    {name:6s} {bar} {r['index']:5.1f}  [{d['newbie_posts']}/{d['total_posts']}小白, {d['newbie_ratio']}%, top帖{top_count}条]")
     
+    # ===== 第3.5步: ETF 价格采集 =====
+    print("\n📈 ETF 价格采集")
+    from collectors.etf_collector import collect_all as collect_etf
+    etf_prices = collect_etf()
+    etf_file = os.path.join(DATA_DIR, "etf_prices.json")
+    with open(etf_file, 'w', encoding='utf-8') as f:
+        json.dump(etf_prices, f, ensure_ascii=False, indent=2)
+    print(f"  ETF 价格已保存: {etf_file}")
+    
     # ===== 第4步: 存储历史（已完成，上文已按日期分组存储） =====
     print(f"\n💾 第4步: 历史记录已存入 {len(sorted_dates)} 个日期")
     
@@ -139,7 +148,7 @@ def run_pipeline():
     # 同步到 frontend/data/（前端服务器从这里读取）
     frontend_data_dir = os.path.join(os.path.dirname(__file__), "frontend", "data")
     os.makedirs(frontend_data_dir, exist_ok=True)
-    for fname in ["dashboard_data.json", "history.json", "xhs_posts.json"]:
+    for fname in ["dashboard_data.json", "history.json", "xhs_posts.json", "etf_prices.json"]:
         src = os.path.join(DATA_DIR, fname)
         dst = os.path.join(frontend_data_dir, fname)
         if os.path.exists(src):
