@@ -106,20 +106,24 @@ def run_pipeline():
         total_posts = sum(len(v) for v in by_date[date_str].values())
         print(f"  [{date_str}] {len(sector_indices)}板块 {total_posts}条帖子 → {name_preview}...")
     
-    # 打印最终日期的详细指数（兼容原有输出格式）
-    latest_date = sorted_dates[-1] if sorted_dates else None
-    if latest_date:
-        final_indices = {
-            sector: compute_sector_index(analysis_results[sector])
-            for sector in analysis_results
-        }
-        print(f"\n  最新日期 [{latest_date}] 详情:")
-        for sector in sorted(analysis_results.keys()):
-            r = final_indices[sector]
-            name = SECTOR_NAMES.get(sector, sector)
-            d = r["details"]
-            bar = "█" * int(r["index"] / 5) + "░" * (20 - int(r["index"] / 5))
-            print(f"    {name:6s} {bar} {r['index']:5.1f}  [{d['newbie_posts']}/{d['total_posts']}小白, {d['newbie_ratio']}%]")
+    # 计算基于全部帖子的综合指数（top_newbie_posts 跨日期聚合，保证每个板块5-8条）
+    final_indices = {
+        sector: compute_sector_index(analysis_results[sector])
+        for sector in analysis_results
+    }
+    # 存入 history 作为当天记录，确保 latest 有完整的 top_newbie_posts
+    add_record(final_indices)
+    
+    # 打印综合指数详情
+    latest_date = sorted_dates[-1] if sorted_dates else datetime.now().strftime("%Y-%m-%d")
+    print(f"\n  综合指数 [{latest_date}] 详情:")
+    for sector in sorted(analysis_results.keys()):
+        r = final_indices[sector]
+        name = SECTOR_NAMES.get(sector, sector)
+        d = r["details"]
+        bar = "█" * int(r["index"] / 5) + "░" * (20 - int(r["index"] / 5))
+        top_count = len(r.get("top_newbie_posts", []))
+        print(f"    {name:6s} {bar} {r['index']:5.1f}  [{d['newbie_posts']}/{d['total_posts']}小白, {d['newbie_ratio']}%, top帖{top_count}条]")
     
     # ===== 第4步: 存储历史（已完成，上文已按日期分组存储） =====
     print(f"\n💾 第4步: 历史记录已存入 {len(sorted_dates)} 个日期")
