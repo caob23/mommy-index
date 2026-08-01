@@ -197,6 +197,9 @@ body {
 </div>
 
 <script>
+// ===== 可配置参数 =====
+const CHART_MAX_POINTS = 30;  // 折线图最多展示数据点数（修改后重新部署生效）
+
 const SECTOR_NAMES = {
   nasdaq: '纳斯达克',
   gold: '黄金', 
@@ -386,8 +389,9 @@ function renderCharts(data) {
             title: { display: true, text: '价格', color: '#64748b' }
           },
           x: {
+            type: 'category',
             grid: { color: '#33415533' },
-            ticks: { color: '#64748b', maxTicksLimit: 10 },
+            ticks: { color: '#64748b', autoSkip: true, maxRotation: 45, maxTicksLimit: 15 },
           }
         },
       }

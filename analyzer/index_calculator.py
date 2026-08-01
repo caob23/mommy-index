@@ -2,12 +2,15 @@
 宝妈指数计算引擎
 四个板块独立计算，各自有完整的历史曲线
 """
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from typing import Dict, List
 import json
 import os
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+
+# 折线图最多展示的数据点数量（可修改）
+CHART_MAX_POINTS = 30
 
 SECTOR_NAMES = {
     "nasdaq": "纳斯达克",
@@ -19,6 +22,23 @@ SECTOR_NAMES = {
     "baijiu": "白酒",
     "hs300": "沪深300",
 }
+
+
+def is_trading_day(date_str: str) -> bool:
+    """判断是否为交易日（简化版：周一至周五，不含节假日）"""
+    try:
+        d = datetime.strptime(date_str, "%Y-%m-%d").date()
+        return d.weekday() < 5
+    except ValueError:
+        return True  # 无法解析默认认为是交易日
+
+
+def last_trading_day() -> str:
+    """返回最近一个交易日的日期"""
+    d = date.today()
+    while d.weekday() >= 5:
+        d -= timedelta(days=1)
+    return d.strftime("%Y-%m-%d")
 
 
 def compute_sector_index(analysis_results: List) -> Dict:
@@ -211,21 +231,29 @@ def add_record(sector_indices: Dict[str, Dict], analysis_results: Dict = None,
     save_history(history)
 
 
-def get_dashboard_data() -> Dict:
-    """获取前端所需的完整数据"""
+def get_dashboard_data(max_points: int = CHART_MAX_POINTS) -> Dict:
+    """获取前端所需的完整数据
+    
+    - 图表仅展示最近 max_points 个交易日，非交易日不展示
+    - 全部历史数据保留在 history.json，不删除
+    - ETF 价格数据保留在 etf_prices.json
+    """
     history = load_history()
     records = history.get("records", [])
     
-    # 最新一条
-    latest = records[-1] if records else None
+    # 过滤仅保留交易日
+    trading_records = [r for r in records if is_trading_day(r["date"])]
     
-    # 为每个板块准备历史曲线数据（动态支持所有板块）
-    sector_history = {s: [] for s in SECTOR_NAMES}
+    # 最新一条：取最后一个交易日，若无则取原始最新
+    latest = trading_records[-1] if trading_records else (records[-1] if records else None)
     
-    for r in records:
+    # 图表数据：仅最近 N 个交易日
+    chart_records = trading_records[-max_points:]
+    chart_sector_history = {s: [] for s in SECTOR_NAMES}
+    for r in chart_records:
         for sector, data in r.get("sectors", {}).items():
-            if sector in sector_history:
-                sector_history[sector].append({
+            if sector in chart_sector_history:
+                chart_sector_history[sector].append({
                     "date": r["date"],
                     "index": data["index"],
                 })
@@ -239,7 +267,7 @@ def get_dashboard_data() -> Dict:
     
     return {
         "latest": latest,
-        "sector_history": sector_history,
+        "sector_history": chart_sector_history,
         "record_count": len(records),
         "etf_prices": etf_prices,
     }

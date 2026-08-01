@@ -14,7 +14,8 @@ from collectors.guba_collector import collect_all as collect_guba
 from collectors.xhs_collector import collect_all as collect_xhs
 from analyzer.llm_analyzer import analyze_all
 from analyzer.index_calculator import (
-    compute_sector_index, add_record, get_dashboard_data, SECTOR_NAMES
+    compute_sector_index, add_record, get_dashboard_data, SECTOR_NAMES,
+    last_trading_day
 )
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
@@ -111,8 +112,8 @@ def run_pipeline():
         sector: compute_sector_index(analysis_results[sector])
         for sector in analysis_results
     }
-    # 存入 history 作为当天记录，确保 latest 有完整的 top_newbie_posts
-    add_record(final_indices)
+    # 存入 history 作为当天记录（非交易日归入上一交易日），确保 latest 有完整的 top_newbie_posts
+    add_record(final_indices, record_date=last_trading_day())
     
     # 打印综合指数详情
     latest_date = sorted_dates[-1] if sorted_dates else datetime.now().strftime("%Y-%m-%d")
