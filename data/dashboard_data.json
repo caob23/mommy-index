@@ -1,22 +1,22 @@
 {
   "latest": {
     "date": "2026-08-01",
-    "timestamp": "2026-08-01T08:46:59.380848",
+    "timestamp": "2026-08-01T09:07:44.323998",
     "sectors": {
       "nasdaq": {
-        "index": 20.0,
-        "interpretation": "🟢 正常区间 — 小白参与度适中，无需特别操作",
+        "index": 19.8,
+        "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 20,
-          "valid_posts": 20,
+          "total_posts": 21,
+          "valid_posts": 21,
           "spam_posts": 0,
           "newbie_posts": 2,
           "pure_newbie": 0,
-          "newbie_ratio": 10.0,
+          "newbie_ratio": 9.5,
           "avg_newbie_score": 24.0,
           "avg_sentiment": 50.0,
           "purity_signal": 0.0,
-          "activity": 25.0,
+          "activity": 26.2,
           "mom_buy_index": 30.1,
           "mom_sell_index": 0.0,
           "buy_sell_ratio": 1.0,
@@ -150,8 +150,8 @@
         "index": 0.0,
         "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 6,
-          "valid_posts": 6,
+          "total_posts": 7,
+          "valid_posts": 7,
           "spam_posts": 0,
           "newbie_posts": 0,
           "pure_newbie": 0,
@@ -159,7 +159,7 @@
           "avg_newbie_score": 0.0,
           "avg_sentiment": 0.0,
           "purity_signal": 0,
-          "activity": 7.5,
+          "activity": 8.8,
           "mom_buy_index": 0.0,
           "mom_sell_index": 0.0,
           "buy_sell_ratio": 0.0,
@@ -274,7 +274,7 @@
       },
       {
         "date": "2026-07-30",
-        "index": 16.7
+        "index": 16.8
       },
       {
         "date": "2026-07-31",
@@ -282,7 +282,7 @@
       },
       {
         "date": "2026-08-01",
-        "index": 20.0
+        "index": 19.8
       }
     ],
     "gold": [
