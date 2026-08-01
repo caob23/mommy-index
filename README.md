@@ -149,6 +149,12 @@ cd frontend && python -m http.server 8765
 
 ---
 
+## 鸣谢
+
+本项目代码绝大部分基于 [mihang123/mom-index](https://github.com/mihang123/mom-index) 二次开发，在此基础上扩展为 8 个板块、接入 GitHub Actions 自动采集与 Pages 部署。
+
+感谢原作者的开源贡献。
+
 ## License
 
-MIT — 仅供学习研究，不构成投资建议。
+本项目沿用上游项目的许可。仅供学习研究，不构成投资建议。
