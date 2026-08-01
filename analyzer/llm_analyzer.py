@@ -92,6 +92,8 @@ class AnalysisResult:
     title: str
     platform: str
     sector: str
+    url: str = ""              # 帖子跳转链接
+    timestamp: str = ""         # 帖子发布时间
     
     # 分数
     newbie_score: float = 0.0       # 小白总分 (0-100)
@@ -134,6 +136,8 @@ def analyze_post(post: Dict, sector: str) -> AnalysisResult:
                 title=title[:80],
                 platform=post.get("platform", "unknown"),
                 sector=sector,
+                url=post.get("url", ""),
+                timestamp=post.get("date", ""),
                 newbie_score=0,
                 newbie_confidence="high",
                 level="垃圾帖",
@@ -141,11 +145,21 @@ def analyze_post(post: Dict, sector: str) -> AnalysisResult:
             )
             return result
     
+    raw_date = post.get("date", "")
+    raw_collected = post.get("collected_at", "")
+    # 优先用帖子原始时间，无效则降级为采集时间
+    if raw_date and raw_date != "未知":
+        timestamp = raw_date
+    else:
+        timestamp = raw_collected[:16].replace("T", " ") if raw_collected else ""
+    
     result = AnalysisResult(
         post_id=post.get("id", ""),
         title=title[:80],
         platform=post.get("platform", "unknown"),
         sector=sector,
+        url=post.get("url", ""),
+        timestamp=timestamp,
     )
     
     # 1. 逐信号匹配

@@ -119,6 +119,8 @@ def compute_sector_index(analysis_results: List) -> Dict:
         "top_newbie_posts": [
             {
                 "title": r.title[:60],
+                "url": r.url,
+                "timestamp": r.timestamp,
                 "score": r.newbie_score,
                 "level": r.level,
                 "reasoning": r.reasoning[:150],
@@ -127,7 +129,7 @@ def compute_sector_index(analysis_results: List) -> Dict:
                 "intent_label": {"buy": "🟢 买入", "sell": "🔴 卖出", "neutral": "⚪ 观望"}.get(r.intent, ""),
                 "key_signals": r.key_signals[:2],
             }
-            for r in sorted(newbie_posts, key=lambda x: x.newbie_score, reverse=True)[:5]
+            for r in sorted(newbie_posts, key=lambda x: x.newbie_score, reverse=True)[:8]
         ],
     }
 
