@@ -1,27 +1,27 @@
 {
   "latest": {
-    "date": "2026-08-05",
-    "timestamp": "2026-08-05T15:54:42.297677",
+    "date": "2026-08-07",
+    "timestamp": "2026-08-07T10:41:36.461470",
     "sectors": {
       "nasdaq": {
-        "index": 15.0,
+        "index": 13.5,
         "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 378,
-          "valid_posts": 378,
+          "total_posts": 382,
+          "valid_posts": 382,
           "spam_posts": 0,
-          "newbie_posts": 45,
+          "newbie_posts": 37,
           "pure_newbie": 1,
-          "newbie_ratio": 11.9,
-          "avg_newbie_score": 27.1,
-          "avg_sentiment": 15.6,
-          "purity_signal": 2.2,
+          "newbie_ratio": 9.7,
+          "avg_newbie_score": 28.1,
+          "avg_sentiment": 10.8,
+          "purity_signal": 2.7,
           "activity": 100,
-          "mom_buy_index": 12.2,
-          "mom_sell_index": 15.8,
-          "buy_sell_ratio": 0.8,
-          "buy_count": 7,
-          "sell_count": 9
+          "mom_buy_index": 9.7,
+          "mom_sell_index": 15.1,
+          "buy_sell_ratio": 0.6,
+          "buy_count": 4,
+          "sell_count": 7
         },
         "top_newbie_posts": [
           {
@@ -42,7 +42,7 @@
           {
             "title": "看不懂，哪位大佬解说一下？",
             "url": "https://guba.eastmoney.com/news,sz159941,1754495717.html",
-            "timestamp": "08-05 11:32",
+            "timestamp": "08-05 11:04",
             "score": 42.0,
             "level": "偏小白",
             "reasoning": "帖子「看不懂，哪位大佬解说一下？...」 命中1个小信号: 知识求助(6分)。 以问句结尾，在寻求答案 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
@@ -54,9 +54,37 @@
             ]
           },
           {
+            "title": "不知道还要不要买入，会不会买到山顶",
+            "url": "https://guba.eastmoney.com/news,sz159941,1756047652.html",
+            "timestamp": "08-07 14:47",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「不知道还要不要买入，会不会买到山顶...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "buy",
+            "intent_label": "🟢 买入",
+            "key_signals": [
+              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 要不要)"
+            ]
+          },
+          {
+            "title": "溢价太高了，能不能砸下来，",
+            "url": "https://guba.eastmoney.com/news,sz159941,1755621141.html",
+            "timestamp": "08-07 10:06",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「溢价太高了，能不能砸下来，...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+            ]
+          },
+          {
             "title": "看能不能创新高",
             "url": "https://guba.eastmoney.com/news,sz159941,1754753288.html",
-            "timestamp": "08-05 15:06",
+            "timestamp": "08-05 15:04",
             "score": 38.0,
             "level": "偏小白",
             "reasoning": "帖子「看能不能创新高...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
@@ -70,7 +98,7 @@
           {
             "title": "今天清仓了，赌它今晚跌，赌错了，不知道明天能不能跌到我卖出的价格，我买回来",
             "url": "https://guba.eastmoney.com/news,sz159941,1753684589.html",
-            "timestamp": "08-05 10:40",
+            "timestamp": "08-05 10:43",
             "score": 38.0,
             "level": "偏小白",
             "reasoning": "帖子「今天清仓了，赌它今晚跌，赌错了，不知道明天能不能跌到我卖出的价格，我买回来...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
@@ -84,7 +112,7 @@
           {
             "title": "兄弟姐妹们，现在要不要卖",
             "url": "https://guba.eastmoney.com/news,sz159941,1753925831.html",
-            "timestamp": "08-04 11:22",
+            "timestamp": "08-04 11:14",
             "score": 38.0,
             "level": "偏小白",
             "reasoning": "帖子「兄弟姐妹们，现在要不要卖...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
@@ -98,7 +126,7 @@
           {
             "title": "前面指数跌半个月跌了10%，溢价一直没，昨天看那么高溢价还T了一部分，怎么买回来",
             "url": "https://guba.eastmoney.com/news,sz159941,1754070808.html",
-            "timestamp": "08-04 14:50",
+            "timestamp": "08-04 14:46",
             "score": 34.0,
             "level": "中间派",
             "reasoning": "帖子「前面指数跌半个月跌了10%，溢价一直没，昨天看那么高溢价还T了一部分，怎么买回来...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
@@ -108,82 +136,16 @@
             "key_signals": [
               "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 怎么买)"
             ]
-          },
-          {
-            "title": "又冲高了，周一高开多少个点呢",
-            "url": "https://guba.eastmoney.com/news,sz159941,1752871730.html",
-            "timestamp": "07-31 18:54",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「又冲高了，周一高开多少个点呢...」 命中1个小信号: 过度乐观(4分)。 以问句结尾，在寻求答案 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 1.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 冲)"
-            ]
-          },
-          {
-            "title": "真牛逼啊，后悔今天加少了，相信文明相信光就好了",
-            "url": "https://guba.eastmoney.com/news,sz159941,1754899034.html",
-            "timestamp": "08-05 22:44",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「真牛逼啊，后悔今天加少了，相信文明相信光就好了...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 后悔)"
-            ]
           }
         ],
         "latest_posts": [
           {
-            "title": "这一波在上涨6000到8000个点，既34000-36000",
-            "url": "https://guba.eastmoney.com/news,sz159941,1754902119.html",
-            "timestamp": "08-05 23:51",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「这一波在上涨6000到8000个点，既34000-36000...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "明天下楼梯，",
-            "url": "https://guba.eastmoney.com/news,sz159941,1754923990.html",
-            "timestamp": "08-05 23:50",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「明天下楼梯，...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "纳指etf的溢价率就没有低于9%的，等于一买入就亏9%，为啥这么疯狂？",
-            "url": "https://guba.eastmoney.com/news,sz159941,1754913027.html",
-            "timestamp": "08-05 23:36",
-            "score": 2.0,
-            "level": "专业投资者",
-            "reasoning": "帖子「纳指etf的溢价率就没有低于9%的，等于一买入就亏9%，为啥这么疯狂？...」 命中1个专业信号: 专业术语(-5分)。 以问句结尾，在寻求答案 综合得分2.0分， 判定为「专业投资者」 (置信度: low)。",
-            "sentiment": -1.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: 溢价率, ETF)"
-            ]
-          },
-          {
-            "title": "纳指定投第1314天今日实盘如下：今日收益：+163303整体收益:266W今日",
-            "url": "https://guba.eastmoney.com/news,sh513100,1754897961.html",
-            "timestamp": "08-05 22:57",
+            "title": "纳指定投第1315天今日实盘如下：今日收益：-49139整体收益:261W今日定",
+            "url": "https://guba.eastmoney.com/news,sz159501,1755495544.html",
+            "timestamp": "08-07 18:30",
             "score": 0,
             "level": "专业投资者",
-            "reasoning": "帖子「纳指定投第1314天今日实盘如下：今日收益：+163303整体收益:266W今日...」 命中1个专业信号: 策略思维(-4分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "reasoning": "帖子「纳指定投第1315天今日实盘如下：今日收益：-49139整体收益:261W今日定...」 命中1个专业信号: 策略思维(-4分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "buy",
             "intent_label": "🟢 买入",
@@ -192,82 +154,118 @@
             ]
           },
           {
-            "title": "真牛逼啊，后悔今天加少了，相信文明相信光就好了",
-            "url": "https://guba.eastmoney.com/news,sz159941,1754899034.html",
-            "timestamp": "08-05 22:44",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「真牛逼啊，后悔今天加少了，相信文明相信光就好了...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
+            "title": "#炒股日记#",
+            "url": "https://guba.eastmoney.com/news,sz159941,1756100874.html",
+            "timestamp": "08-07 17:40",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「#炒股日记#...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "买了一段时间了，今天想起来晒一下",
+            "url": "https://guba.eastmoney.com/news,yyhd,1755566569.html",
+            "timestamp": "08-07 17:20",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「买了一段时间了，今天想起来晒一下...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "buy",
+            "intent_label": "🟢 买入",
+            "key_signals": []
+          },
+          {
+            "title": "现在每天等着美股开盘成了日常了内心也平静了，买了几本书学习，再也不追涨杀跌，一夜",
+            "url": "https://guba.eastmoney.com/news,sz159941,1755510999.html",
+            "timestamp": "08-07 17:03",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「现在每天等着美股开盘成了日常了内心也平静了，买了几本书学习，再也不追涨杀跌，一夜...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "buy",
+            "intent_label": "🟢 买入",
+            "key_signals": []
+          },
+          {
+            "title": "以后都是20,30个点的溢价，国人投资美股的热情浇不灭了。有认知的人越来越多了。",
+            "url": "https://guba.eastmoney.com/news,sz159941,1756064965.html",
+            "timestamp": "08-07 16:53",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「以后都是20,30个点的溢价，国人投资美股的热情浇不灭了。有认知的人越来越多了。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "今天2手赚5毛走人",
+            "url": "https://guba.eastmoney.com/news,sz159941,1756111041.html",
+            "timestamp": "08-07 16:50",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「今天2手赚5毛走人...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "sell",
+            "intent_label": "🔴 卖出",
+            "key_signals": []
+          },
+          {
+            "title": "周一也要闷杀，哪怕今天晚上涨了，大幅度透支利好",
+            "url": "https://guba.eastmoney.com/news,sz159941,1756063149.html",
+            "timestamp": "08-07 16:43",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「周一也要闷杀，哪怕今天晚上涨了，大幅度透支利好...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "这么高的溢价率，下杀溢价很猛的。还不跑路？",
+            "url": "https://guba.eastmoney.com/news,sz159941,1756114140.html",
+            "timestamp": "08-07 16:43",
+            "score": 2.0,
+            "level": "专业投资者",
+            "reasoning": "帖子「这么高的溢价率，下杀溢价很猛的。还不跑路？...」 命中1个专业信号: 专业术语(-5分)。 以问句结尾，在寻求答案 综合得分2.0分， 判定为「专业投资者」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 后悔)"
+              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: 溢价率)"
             ]
-          },
-          {
-            "title": "明天会跌吗",
-            "url": "https://guba.eastmoney.com/news,sz159941,1754895330.html",
-            "timestamp": "08-05 22:03",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「明天会跌吗...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "拉溢价，今晚纳指绿，这个溢价要杀掉2%",
-            "url": "https://guba.eastmoney.com/news,sz159941,1754866331.html",
-            "timestamp": "08-05 21:15",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「拉溢价，今晚纳指绿，这个溢价要杀掉2%...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "嗯？最近怎么涨这么好？",
-            "url": "https://guba.eastmoney.com/news,sz159941,1754298504.html",
-            "timestamp": "08-05 20:50",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「嗯？最近怎么涨这么好？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
           }
         ]
       },
       "gold": {
-        "index": 18.1,
+        "index": 17.5,
         "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 322,
-          "valid_posts": 322,
+          "total_posts": 280,
+          "valid_posts": 280,
           "spam_posts": 0,
-          "newbie_posts": 43,
+          "newbie_posts": 39,
           "pure_newbie": 1,
-          "newbie_ratio": 13.4,
-          "avg_newbie_score": 27.1,
-          "avg_sentiment": 27.9,
-          "purity_signal": 2.3,
+          "newbie_ratio": 13.9,
+          "avg_newbie_score": 27.5,
+          "avg_sentiment": 23.1,
+          "purity_signal": 2.6,
           "activity": 100,
-          "mom_buy_index": 10.1,
-          "mom_sell_index": 9.9,
-          "buy_sell_ratio": 1.2,
-          "buy_count": 5,
+          "mom_buy_index": 9.4,
+          "mom_sell_index": 11.4,
+          "buy_sell_ratio": 1.0,
+          "buy_count": 4,
           "sell_count": 4
         },
         "top_newbie_posts": [
           {
             "title": "我买点看看能不能赚钱。",
             "url": "https://guba.eastmoney.com/news,sh518880,1753328341.html",
-            "timestamp": "08-04 00:07",
+            "timestamp": "08-03 19:06",
             "score": 50.0,
             "level": "纯小白",
             "reasoning": "帖子「我买点看看能不能赚钱。...」 命中1个小信号: 决策依赖(7分)。 标题极短+情绪化，典型小白特征 综合得分50.0分， 判定为「纯小白」 (置信度: low)。",
@@ -281,7 +279,7 @@
           {
             "title": "今年第一次买黄金，开盘买的，这算是把它买崩了吗，小亏一个点",
             "url": "https://guba.eastmoney.com/news,sh518880,1752016145.html",
-            "timestamp": "07-31 07:36",
+            "timestamp": "07-31 04:13",
             "score": 42.0,
             "level": "偏小白",
             "reasoning": "帖子「今年第一次买黄金，开盘买的，这算是把它买崩了吗，小亏一个点...」 命中1个小信号: 身份自述(8分)。 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
@@ -293,9 +291,51 @@
             ]
           },
           {
+            "title": "现在这个价格要不要拿住",
+            "url": "https://guba.eastmoney.com/news,sh518880,1755862514.html",
+            "timestamp": "08-07 14:57",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「现在这个价格要不要拿住...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 要不要)"
+            ]
+          },
+          {
+            "title": "个腿，跟紧脚步行不行",
+            "url": "https://guba.eastmoney.com/news,sh518880,1755108704.html",
+            "timestamp": "08-06 10:40",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「个腿，跟紧脚步行不行...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 行不行)"
+            ]
+          },
+          {
+            "title": "什么意思",
+            "url": "https://guba.eastmoney.com/news,sh518880,1755333941.html",
+            "timestamp": "08-06 14:13",
+            "score": 34.0,
+            "level": "中间派",
+            "reasoning": "帖子「什么意思...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 什么意思)"
+            ]
+          },
+          {
             "title": "不懂就问，这个应该比个股好上车吧",
             "url": "https://guba.eastmoney.com/news,sh518880,1754927189.html",
-            "timestamp": "08-05 23:50",
+            "timestamp": "08-06 08:58",
             "score": 34.0,
             "level": "中间派",
             "reasoning": "帖子「不懂就问，这个应该比个股好上车吧...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
@@ -323,7 +363,7 @@
           {
             "title": "咋样兄弟们，有没有人来预测一下。我个人是感觉差不多了",
             "url": "https://guba.eastmoney.com/news,sh518880,1753959905.html",
-            "timestamp": "08-04 15:49",
+            "timestamp": "08-04 14:16",
             "score": 34.0,
             "level": "中间派",
             "reasoning": "帖子「咋样兄弟们，有没有人来预测一下。我个人是感觉差不多了...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
@@ -333,146 +373,102 @@
             "key_signals": [
               "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 有没有人)"
             ]
-          },
-          {
-            "title": "黄金涨100多美元，华安金价涨不到1角？谁知道什么原因",
-            "url": "https://guba.eastmoney.com/news,sh518880,1751764564.html",
-            "timestamp": "07-30 12:31",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「黄金涨100多美元，华安金价涨不到1角？谁知道什么原因...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 谁知道)"
-            ]
-          },
-          {
-            "title": "昨天卖光了，未来几天怎么看，什么时候适合抄底，求大佬指点一下",
-            "url": "https://guba.eastmoney.com/news,sh518880,1749188091.html",
-            "timestamp": "07-27 10:50",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「昨天卖光了，未来几天怎么看，什么时候适合抄底，求大佬指点一下...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 1.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 大佬)"
-            ]
-          },
-          {
-            "title": "感觉怎么样？草地建仓成功，有没有大佬指点迷津，黄金未来怎么走",
-            "url": "https://guba.eastmoney.com/news,sh518880,1749181706.html",
-            "timestamp": "07-24 23:43",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「感觉怎么样？草地建仓成功，有没有大佬指点迷津，黄金未来怎么走...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 大佬)"
-            ]
           }
         ],
         "latest_posts": [
           {
-            "title": "不懂就问，这个应该比个股好上车吧",
-            "url": "https://guba.eastmoney.com/news,sh518880,1754927189.html",
-            "timestamp": "08-05 23:50",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「不懂就问，这个应该比个股好上车吧...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
+            "title": "8月7【今日债市收评】今天股债同步上涨，双债晴天，债基可能收中大蛋！",
+            "url": "https://guba.eastmoney.com/news,sh518880,1756095723.html",
+            "timestamp": "08-07 18:28",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「8月7【今日债市收评】今天股债同步上涨，双债晴天，债基可能收中大蛋！...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "策拿",
+            "url": "https://guba.eastmoney.com/news,sh518880,1756137031.html",
+            "timestamp": "08-07 18:22",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「策拿...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "//@诚实守信的凌波丽:这个月目标还差一点，下星期继续",
+            "url": "https://guba.eastmoney.com/news,sh513310,1756131805.html",
+            "timestamp": "08-07 18:20",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「//@诚实守信的凌波丽:这个月目标还差一点，下星期继续...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "央行连买20个月，黄金ETF二季度净卖21吨",
+            "url": "https://guba.eastmoney.com/news,sh518880,1755570948.html",
+            "timestamp": "08-07 18:09",
+            "score": 0,
+            "level": "专业投资者",
+            "reasoning": "帖子「央行连买20个月，黄金ETF二季度净卖21吨...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
             "key_signals": [
-              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 不懂)"
+              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
             ]
           },
           {
-            "title": "明天要熬到头了，兄弟们，干！",
-            "url": "https://guba.eastmoney.com/news,sh518880,1754925985.html",
-            "timestamp": "08-05 23:39",
+            "title": "今天吃了个中肉，这个月目标马上达到，要求不高，赚个月工资就可以了，这几天几个看好",
+            "url": "https://guba.eastmoney.com/news,sh518880,1754864732.html",
+            "timestamp": "08-07 17:55",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「明天要熬到头了，兄弟们，干！...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「今天吃了个中肉，这个月目标马上达到，要求不高，赚个月工资就可以了，这几天几个看好...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "明天涨停",
-            "url": "https://guba.eastmoney.com/news,sh518880,1754925653.html",
-            "timestamp": "08-05 23:35",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「明天涨停...」 命中1个小信号: 短期思维(3分)。 标题极短+情绪化，典型小白特征 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「短期思维」关注明天/后天/今天涨跌，非长期视角 (命中: 明天涨)"
-            ]
-          },
-          {
-            "title": "明天开盘买，还是现在买，还能入手吗？来的急吗？",
-            "url": "https://guba.eastmoney.com/news,sh518880,1754922443.html",
-            "timestamp": "08-05 23:34",
-            "score": 18.0,
+            "title": "9.1一路T到8.390成本后续不操作，不继续补仓了等年底收货",
+            "url": "https://guba.eastmoney.com/news,sh518880,1756021095.html",
+            "timestamp": "08-07 17:53",
+            "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「明天开盘买，还是现在买，还能入手吗？来的急吗？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「9.1一路T到8.390成本后续不操作，不继续补仓了等年底收货...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "buy",
             "intent_label": "🟢 买入",
             "key_signals": []
           },
           {
-            "title": "接在高点，我的妈呀",
-            "url": "https://guba.eastmoney.com/news,sh518880,1754729970.html",
-            "timestamp": "08-05 23:08",
+            "title": "8月7【债市午盘】今天股市上涨，债市小涨，双债晴天，债市小幅回升？！",
+            "url": "https://guba.eastmoney.com/news,sh518880,1755871556.html",
+            "timestamp": "08-07 17:25",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「接在高点，我的妈呀...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「8月7【债市午盘】今天股市上涨，债市小涨，双债晴天，债市小幅回升？！...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "坚持终于换来了一两口肉，",
-            "url": "https://guba.eastmoney.com/news,sh518880,1754921173.html",
-            "timestamp": "08-05 23:03",
+            "title": "下不来了黄金931了",
+            "url": "https://guba.eastmoney.com/news,sh518880,1756049668.html",
+            "timestamp": "08-07 17:25",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「坚持终于换来了一两口肉，...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "4000-4200横盘没个半年上不去",
-            "url": "https://guba.eastmoney.com/news,sh518880,1754807560.html",
-            "timestamp": "08-05 23:00",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「4000-4200横盘没个半年上不去...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "明天3个点吗",
-            "url": "https://guba.eastmoney.com/news,sh518880,1754920193.html",
-            "timestamp": "08-05 22:59",
-            "score": 18.0,
-            "level": "偏专业",
-            "reasoning": "帖子「明天3个点吗...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「下不来了黄金931了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
@@ -481,90 +477,90 @@
         ]
       },
       "cpo": {
-        "index": 20.7,
-        "interpretation": "🟢 正常区间 — 小白参与度适中，无需特别操作",
+        "index": 18.9,
+        "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 390,
-          "valid_posts": 390,
+          "total_posts": 392,
+          "valid_posts": 392,
           "spam_posts": 0,
-          "newbie_posts": 66,
+          "newbie_posts": 55,
           "pure_newbie": 1,
-          "newbie_ratio": 16.9,
-          "avg_newbie_score": 26.8,
-          "avg_sentiment": 34.8,
-          "purity_signal": 1.5,
+          "newbie_ratio": 14.0,
+          "avg_newbie_score": 27.3,
+          "avg_sentiment": 30.9,
+          "purity_signal": 1.8,
           "activity": 100,
-          "mom_buy_index": 17.5,
-          "mom_sell_index": 9.6,
-          "buy_sell_ratio": 3.4,
-          "buy_count": 17,
+          "mom_buy_index": 10.7,
+          "mom_sell_index": 10.4,
+          "buy_sell_ratio": 1.4,
+          "buy_count": 7,
           "sell_count": 5
         },
         "top_newbie_posts": [
           {
-            "title": "下午能不能冲上去",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754592163.html",
-            "timestamp": "08-05 11:42",
-            "score": 54.0,
+            "title": "为啥有这么多人买，有大佬解答一下不。小白不太懂围观一下",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756050922.html",
+            "timestamp": "08-07 14:48",
+            "score": 66.0,
             "level": "纯小白",
-            "reasoning": "帖子「下午能不能冲上去...」 命中2个小信号: 决策依赖(7分), 过度乐观(4分)。 综合得分54.0分， 判定为「纯小白」 (置信度: medium)。",
-            "sentiment": 1.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)",
-              "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 冲)"
-            ]
-          },
-          {
-            "title": "今天能不能返红？",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754544957.html",
-            "timestamp": "08-05 11:02",
-            "score": 46.0,
-            "level": "偏小白",
-            "reasoning": "帖子「今天能不能返红？...」 命中1个小信号: 决策依赖(7分)。 以问句结尾，在寻求答案 综合得分46.0分， 判定为「偏小白」 (置信度: low)。",
+            "reasoning": "帖子「为啥有这么多人买，有大佬解答一下不。小白不太懂围观一下...」 命中2个小信号: 身份自述(8分), 知识求助(6分)。 综合得分66.0分， 判定为「纯小白」 (置信度: medium)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+              "「身份自述」明确自称小白/新手/刚入门/宝妈 (命中: 小白)",
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 大佬)"
             ]
           },
           {
-            "title": "我哭了就买了2手啊",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754626127.html",
-            "timestamp": "08-05 13:05",
+            "title": "Cpo是不是下周一要完蛋？这盘中来回跳水的？有谁知道？",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756088961.html",
+            "timestamp": "08-07 17:47",
             "score": 42.0,
             "level": "偏小白",
-            "reasoning": "帖子「我哭了就买了2手啊...」 命中1个小信号: 情绪恐慌(5分)。 标题极短+情绪化，典型小白特征 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
+            "reasoning": "帖子「Cpo是不是下周一要完蛋？这盘中来回跳水的？有谁知道？...」 命中1个小信号: 知识求助(6分)。 以问句结尾，在寻求答案 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
             "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
             "key_signals": [
-              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 哭了)"
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 谁知道)"
             ]
           },
           {
-            "title": "能不能追",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754631034.html",
-            "timestamp": "08-05 13:10",
-            "score": 38.0,
+            "title": "完了跌破开盘价了",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756016642.html",
+            "timestamp": "08-07 14:21",
+            "score": 42.0,
             "level": "偏小白",
-            "reasoning": "帖子「能不能追...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
+            "reasoning": "帖子「完了跌破开盘价了...」 命中1个小信号: 情绪恐慌(5分)。 标题极短+情绪化，典型小白特征 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": -1.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
             "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 完了)"
             ]
           },
           {
-            "title": "能不能拉红哥们儿，全场看你表演",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754540273.html",
-            "timestamp": "08-05 11:02",
+            "title": "沃日，吓死人呢，我半导体没事吧？",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756010187.html",
+            "timestamp": "08-07 14:16",
             "score": 38.0,
             "level": "偏小白",
-            "reasoning": "帖子「能不能拉红哥们儿，全场看你表演...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "reasoning": "帖子「沃日，吓死人呢，我半导体没事吧？...」 命中1个小信号: 情绪恐慌(5分)。 以问句结尾，在寻求答案 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 吓死)"
+            ]
+          },
+          {
+            "title": "能不能吧中际调整下去",
+            "url": "https://guba.eastmoney.com/news,sh515880,1755972823.html",
+            "timestamp": "08-07 13:51",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「能不能吧中际调整下去...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
@@ -573,12 +569,12 @@
             ]
           },
           {
-            "title": "人家说一句话，都没有执行，能不能拟定出来还说不定就吓成这样。",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754343519.html",
-            "timestamp": "08-05 09:45",
+            "title": "能不能再当一次大哥，昨天没跪今天找回场子啊",
+            "url": "https://guba.eastmoney.com/news,sh515880,1755396905.html",
+            "timestamp": "08-06 14:49",
             "score": 38.0,
             "level": "偏小白",
-            "reasoning": "帖子「人家说一句话，都没有执行，能不能拟定出来还说不定就吓成这样。...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "reasoning": "帖子「能不能再当一次大哥，昨天没跪今天找回场子啊...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
@@ -587,220 +583,244 @@
             ]
           },
           {
-            "title": "求求明天涨吧",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754868650.html",
-            "timestamp": "08-05 19:10",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「求求明天涨吧...」 命中1个小信号: 短期思维(3分)。 标题极短+情绪化，典型小白特征 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「短期思维」关注明天/后天/今天涨跌，非长期视角 (命中: 明天涨)"
-            ]
-          },
-          {
-            "title": "起飞行吗",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754644645.html",
-            "timestamp": "08-05 13:19",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「起飞行吗...」 命中1个小信号: 过度乐观(4分)。 以问句结尾，在寻求答案 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
+            "title": "马上起飞，快买啊",
+            "url": "https://guba.eastmoney.com/news,sh515880,1755287070.html",
+            "timestamp": "08-06 13:12",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「马上起飞，快买啊...」 命中1个小信号: 过度乐观(4分)。 标题极短+情绪化，典型小白特征 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
             "sentiment": 1.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
               "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 起飞)"
             ]
+          },
+          {
+            "title": "什么意思，什么鬼操作",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756021800.html",
+            "timestamp": "08-07 14:25",
+            "score": 34.0,
+            "level": "中间派",
+            "reasoning": "帖子「什么意思，什么鬼操作...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 什么意思)"
+            ]
           }
         ],
         "latest_posts": [
           {
-            "title": "老规矩，建立新的标记观察贴，顺便全部看一眼。",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754925419.html",
-            "timestamp": "08-05 23:45",
+            "title": "美国光模块准备加大规模扩产，下午中际旭创大跳水的原因。看来老美禁令真不是空穴来风",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756116165.html",
+            "timestamp": "08-07 18:28",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「老规矩，建立新的标记观察贴，顺便全部看一眼。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「美国光模块准备加大规模扩产，下午中际旭创大跳水的原因。看来老美禁令真不是空穴来风...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "97万尾盘梭哈，担心个毛该怎么走就怎么走，资金说了算",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754249184.html",
-            "timestamp": "08-05 23:43",
-            "score": 26.0,
+            "title": "准备好，下周继续涨5天",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756135032.html",
+            "timestamp": "08-07 18:12",
+            "score": 22.0,
             "level": "中间派",
-            "reasoning": "帖子「97万尾盘梭哈，担心个毛该怎么走就怎么走，资金说了算...」 命中1个小信号: 过度乐观(4分)。 综合得分26.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 1.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 梭哈)"
-            ]
+            "reasoning": "帖子「准备好，下周继续涨5天...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
           },
           {
-            "title": "$通信ETF国泰(SH515880)$",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754925269.html",
-            "timestamp": "08-05 23:32",
-            "score": 0,
-            "level": "专业投资者",
-            "reasoning": "帖子「$通信ETF国泰(SH515880)$...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "title": "这只基有铟吗？",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756131245.html",
+            "timestamp": "08-07 18:04",
+            "score": 18.0,
+            "level": "偏专业",
+            "reasoning": "帖子「这只基有铟吗？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "三毛左右我来接盘",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756132149.html",
+            "timestamp": "08-07 17:59",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「三毛左右我来接盘...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "Cpo是不是下周一要完蛋？这盘中来回跳水的？有谁知道？",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756088961.html",
+            "timestamp": "08-07 17:47",
+            "score": 42.0,
+            "level": "偏小白",
+            "reasoning": "帖子「Cpo是不是下周一要完蛋？这盘中来回跳水的？有谁知道？...」 命中1个小信号: 知识求助(6分)。 以问句结尾，在寻求答案 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 谁知道)"
             ]
           },
           {
-            "title": "果然不能瞎折腾",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754924864.html",
-            "timestamp": "08-05 23:29",
+            "title": "缩量转弱0.62生命线希望支撑住下周0.62吸回今天的筹码观望",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756129028.html",
+            "timestamp": "08-07 17:42",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「果然不能瞎折腾...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「缩量转弱0.62生命线希望支撑住下周0.62吸回今天的筹码观望...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "股吧全是一帮没有信仰的家伙，天天就是制造恐慌，还亏20%，拿着不动，加油啊",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754921980.html",
-            "timestamp": "08-05 23:08",
+            "title": "最高点清仓了，回调在重仓",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756120854.html",
+            "timestamp": "08-07 17:07",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「股吧全是一帮没有信仰的家伙，天天就是制造恐慌，还亏20%，拿着不动，加油啊...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": -1.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
+            "reasoning": "帖子「最高点清仓了，回调在重仓...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "sell",
+            "intent_label": "🔴 卖出",
             "key_signals": []
           },
           {
-            "title": "英伟达大涨了，明天妥了，暴涨",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754914236.html",
-            "timestamp": "08-05 22:53",
+            "title": "具备回调预期先出来下周看看情况",
+            "url": "https://guba.eastmoney.com/news,sh515880,1756119563.html",
+            "timestamp": "08-07 17:02",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「英伟达大涨了，明天妥了，暴涨...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 1.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "美股创历史新高+亚太科技全线大涨，这只“亚洲版标普500”直接躺赢",
-            "url": "https://guba.eastmoney.com/news,sz159687,1754613863.html",
-            "timestamp": "08-05 22:46",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「美股创历史新高+亚太科技全线大涨，这只“亚洲版标普500”直接躺赢...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「具备回调预期先出来下周看看情况...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
-          },
-          {
-            "title": "$通信ETF国泰(SH515880)$",
-            "url": "https://guba.eastmoney.com/news,sh515880,1754914899.html",
-            "timestamp": "08-05 22:37",
-            "score": 0,
-            "level": "专业投资者",
-            "reasoning": "帖子「$通信ETF国泰(SH515880)$...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
-            ]
           }
         ]
       },
       "semiconductor": {
-        "index": 17.5,
+        "index": 19.7,
         "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 378,
-          "valid_posts": 378,
+          "total_posts": 382,
+          "valid_posts": 382,
           "spam_posts": 0,
-          "newbie_posts": 60,
+          "newbie_posts": 64,
           "pure_newbie": 0,
-          "newbie_ratio": 15.9,
-          "avg_newbie_score": 26.3,
-          "avg_sentiment": 22.8,
+          "newbie_ratio": 16.8,
+          "avg_newbie_score": 25.9,
+          "avg_sentiment": 32.8,
           "purity_signal": 0.0,
           "activity": 100,
-          "mom_buy_index": 13.6,
-          "mom_sell_index": 10.0,
-          "buy_sell_ratio": 2.2,
-          "buy_count": 11,
-          "sell_count": 5
+          "mom_buy_index": 19.2,
+          "mom_sell_index": 10.9,
+          "buy_sell_ratio": 2.6,
+          "buy_count": 18,
+          "sell_count": 7
         },
         "top_newbie_posts": [
           {
-            "title": "能不能上10日线",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754541087.html",
-            "timestamp": "08-05 11:05",
+            "title": "我是萌新，7月底进来的，11700本金亏了500了，回本不玩了呜呜呜",
+            "url": "https://guba.eastmoney.com/news,sh512480,1755578419.html",
+            "timestamp": "08-07 09:27",
+            "score": 42.0,
+            "level": "偏小白",
+            "reasoning": "帖子「我是萌新，7月底进来的，11700本金亏了500了，回本不玩了呜呜呜...」 命中1个小信号: 身份自述(8分)。 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": -1.0,
+            "intent": "sell",
+            "intent_label": "🔴 卖出",
+            "key_signals": [
+              "「身份自述」明确自称小白/新手/刚入门/宝妈 (命中: 萌新)"
+            ]
+          },
+          {
+            "title": "继续冲涨停",
+            "url": "https://guba.eastmoney.com/news,sh512480,1755770996.html",
+            "timestamp": "08-07 10:32",
             "score": 38.0,
             "level": "偏小白",
-            "reasoning": "帖子「能不能上10日线...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "reasoning": "帖子「继续冲涨停...」 命中1个小信号: 过度乐观(4分)。 标题极短+情绪化，典型小白特征 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 1.0,
+            "intent": "buy",
+            "intent_label": "🟢 买入",
+            "key_signals": [
+              "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 冲)"
+            ]
+          },
+          {
+            "title": "1.065一个大的压力线，看能不能摸一下，逢高减仓减仓减仓",
+            "url": "https://guba.eastmoney.com/news,sh512480,1755170095.html",
+            "timestamp": "08-06 10:46",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「1.065一个大的压力线，看能不能摸一下，逢高减仓减仓减仓...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
             "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
+            "intent": "sell",
+            "intent_label": "🔴 卖出",
             "key_signals": [
               "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
             ]
           },
           {
-            "title": "就看一个标准，就是这周能不能给到上周五的尾盘价0.992就行，没到都是耍流氓",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754049230.html",
-            "timestamp": "08-04 14:07",
+            "title": "冲啊，追涨啊，全仓干",
+            "url": "https://guba.eastmoney.com/news,sh512480,1755111253.html",
+            "timestamp": "08-06 10:35",
             "score": 38.0,
             "level": "偏小白",
-            "reasoning": "帖子「就看一个标准，就是这周能不能给到上周五的尾盘价0.992就行，没到都是耍流氓...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
+            "reasoning": "帖子「冲啊，追涨啊，全仓干...」 命中1个小信号: 过度乐观(4分)。 标题极短+情绪化，典型小白特征 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 1.0,
+            "intent": "buy",
+            "intent_label": "🟢 买入",
             "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+              "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 冲)"
             ]
           },
           {
-            "title": "上周五收盘价0.992你就看这周能不能到就行",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754018973.html",
-            "timestamp": "08-04 13:30",
-            "score": 38.0,
-            "level": "偏小白",
-            "reasoning": "帖子「上周五收盘价0.992你就看这周能不能到就行...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "title": "听说明天要收网了",
+            "url": "https://guba.eastmoney.com/news,sh512480,1755417864.html",
+            "timestamp": "08-06 15:30",
+            "score": 34.0,
+            "level": "中间派",
+            "reasoning": "帖子「听说明天要收网了...」 命中1个小信号: 跟风行为(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+              "「跟风行为」提及跟别人买/听说/博主推荐/朋友说 (命中: 听说)"
             ]
           },
           {
-            "title": "兄弟们今天尾盘进的，明天能不能出来",
-            "url": "https://guba.eastmoney.com/news,sh512480,1753571309.html",
-            "timestamp": "08-03 17:35",
-            "score": 38.0,
-            "level": "偏小白",
-            "reasoning": "帖子「兄弟们今天尾盘进的，明天能不能出来...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "title": "有没有人能解释一下这是为什么涨，",
+            "url": "https://guba.eastmoney.com/news,sh512480,1755167252.html",
+            "timestamp": "08-06 11:05",
+            "score": 34.0,
+            "level": "中间派",
+            "reasoning": "帖子「有没有人能解释一下这是为什么涨，...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 有没有人)"
             ]
           },
           {
             "title": "大佬们，尾盘能补仓",
             "url": "https://guba.eastmoney.com/news,sh512480,1752753185.html",
-            "timestamp": "08-05 12:13",
+            "timestamp": "08-05 13:02",
             "score": 34.0,
             "level": "中间派",
             "reasoning": "帖子「大佬们，尾盘能补仓...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
@@ -812,178 +832,148 @@
             ]
           },
           {
-            "title": "没出息的东西，冲高回落？",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754464084.html",
-            "timestamp": "08-05 10:29",
-            "score": 34.0,
+            "title": "1.07走完了，科技真猛，让我回本走感谢主力",
+            "url": "https://guba.eastmoney.com/news,sh512480,1755776818.html",
+            "timestamp": "08-07 14:59",
+            "score": 30.0,
             "level": "中间派",
-            "reasoning": "帖子「没出息的东西，冲高回落？...」 命中1个小信号: 过度乐观(4分)。 以问句结尾，在寻求答案 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 1.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 冲)"
-            ]
-          },
-          {
-            "title": "明天涨停吗哥哥",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754268696.html",
-            "timestamp": "08-05 00:44",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「明天涨停吗哥哥...」 命中1个小信号: 短期思维(3分)。 标题极短+情绪化，典型小白特征 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 0.0,
+            "reasoning": "帖子「1.07走完了，科技真猛，让我回本走感谢主力...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
+            "sentiment": -1.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「短期思维」关注明天/后天/今天涨跌，非长期视角 (命中: 明天涨)"
-            ]
-          },
-          {
-            "title": "明天涨停",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754139329.html",
-            "timestamp": "08-04 16:11",
-            "score": 34.0,
-            "level": "中间派",
-            "reasoning": "帖子「明天涨停...」 命中1个小信号: 短期思维(3分)。 标题极短+情绪化，典型小白特征 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「短期思维」关注明天/后天/今天涨跌，非长期视角 (命中: 明天涨)"
+              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 完了)"
             ]
           }
         ],
         "latest_posts": [
           {
-            "title": "明天低开，有没有想加仓的朋友出来聊聊",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754911297.html",
-            "timestamp": "08-05 23:50",
+            "title": "每天一点，比上班强",
+            "url": "https://guba.eastmoney.com/news,sh512480,1756138379.html",
+            "timestamp": "08-07 18:31",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「明天低开，有没有想加仓的朋友出来聊聊...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「每天一点，比上班强...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "刚才假装跌了好几下骗出了我的筹码",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754643457.html",
-            "timestamp": "08-05 23:35",
+            "title": "这是生怕美日韩股票不涨，失去信心。",
+            "url": "https://guba.eastmoney.com/news,sh512480,1756134488.html",
+            "timestamp": "08-07 18:29",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「刚才假装跌了好几下骗出了我的筹码...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "sell",
-            "intent_label": "🔴 卖出",
-            "key_signals": []
-          },
-          {
-            "title": "$半导体ETF国联安(SH512480)$",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754902787.html",
-            "timestamp": "08-05 22:53",
-            "score": 0,
-            "level": "专业投资者",
-            "reasoning": "帖子「$半导体ETF国联安(SH512480)$...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "reasoning": "帖子「这是生怕美日韩股票不涨，失去信心。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
-            ]
+            "key_signals": []
           },
           {
-            "title": "天天都是过山车的行情，真刺激",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754902039.html",
-            "timestamp": "08-05 22:16",
+            "title": "这几天涨得还没之前一天砸的多",
+            "url": "https://guba.eastmoney.com/news,sh512480,1756038526.html",
+            "timestamp": "08-07 18:09",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「天天都是过山车的行情，真刺激...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「这几天涨得还没之前一天砸的多...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "$半导体ETF国联安(SH512480)$",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754896193.html",
-            "timestamp": "08-05 21:46",
-            "score": 0,
-            "level": "专业投资者",
-            "reasoning": "帖子「$半导体ETF国联安(SH512480)$...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
-            ]
-          },
-          {
-            "title": "明天跌？",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754893683.html",
-            "timestamp": "08-05 21:44",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「明天跌？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "1块钱冲进来，不会被埋吧",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754570687.html",
-            "timestamp": "08-05 21:42",
-            "score": 26.0,
-            "level": "中间派",
-            "reasoning": "帖子「1块钱冲进来，不会被埋吧...」 命中1个小信号: 过度乐观(4分)。 综合得分26.0分， 判定为「中间派」 (置信度: low)。",
+            "title": "谢谢半导体2天赚了一个W。",
+            "url": "https://guba.eastmoney.com/news,sh512480,1756112400.html",
+            "timestamp": "08-07 17:50",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「谢谢半导体2天赚了一个W。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 1.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 冲)"
-            ]
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
           },
           {
-            "title": "上礼拜五开盘就卖，尾盘接回四分之一！还有很多人说看空！行情哪有绝对的空多，无非就",
-            "url": "https://guba.eastmoney.com/news,sh512480,1754610395.html",
-            "timestamp": "08-05 21:19",
+            "title": "谢谢半导体，半导体是个好人。你知道的bro。",
+            "url": "https://guba.eastmoney.com/news,sh512480,1756108445.html",
+            "timestamp": "08-07 17:35",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「上礼拜五开盘就卖，尾盘接回四分之一！还有很多人说看空！行情哪有绝对的空多，无非就...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「谢谢半导体，半导体是个好人。你知道的bro。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
+          },
+          {
+            "title": "$半导体ETF国联安(SH512480)$",
+            "url": "https://guba.eastmoney.com/news,sh512480,1756098928.html",
+            "timestamp": "08-07 16:35",
+            "score": 0,
+            "level": "专业投资者",
+            "reasoning": "帖子「$半导体ETF国联安(SH512480)$...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
+            ]
+          },
+          {
+            "title": "拉上去就为了把我挂在1.080的顶上吗？",
+            "url": "https://guba.eastmoney.com/news,sh512480,1755839265.html",
+            "timestamp": "08-07 16:19",
+            "score": 18.0,
+            "level": "偏专业",
+            "reasoning": "帖子「拉上去就为了把我挂在1.080的顶上吗？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "尾盘买了点，均衡一下。现在金属，科技，电力都有仓位了。大金融等不了，先不考虑了。",
+            "url": "https://guba.eastmoney.com/news,sh512480,1756073042.html",
+            "timestamp": "08-07 15:47",
+            "score": 0,
+            "level": "专业投资者",
+            "reasoning": "帖子「尾盘买了点，均衡一下。现在金属，科技，电力都有仓位了。大金融等不了，先不考虑了。...」 命中1个专业信号: 策略思维(-4分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "buy",
+            "intent_label": "🟢 买入",
+            "key_signals": [
+              "「策略思维」讨论定投/仓位/分散/对冲/止损等策略 (命中: 仓位)"
+            ]
           }
         ]
       },
       "sp500": {
-        "index": 11.9,
+        "index": 12.2,
         "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
           "total_posts": 393,
           "valid_posts": 393,
           "spam_posts": 0,
-          "newbie_posts": 27,
+          "newbie_posts": 29,
           "pure_newbie": 2,
-          "newbie_ratio": 6.9,
-          "avg_newbie_score": 29.1,
-          "avg_sentiment": 3.7,
-          "purity_signal": 7.4,
+          "newbie_ratio": 7.4,
+          "avg_newbie_score": 30.0,
+          "avg_sentiment": 3.4,
+          "purity_signal": 6.9,
           "activity": 100,
-          "mom_buy_index": 16.4,
+          "mom_buy_index": 13.9,
           "mom_sell_index": 0.0,
-          "buy_sell_ratio": 6.0,
-          "buy_count": 6,
+          "buy_sell_ratio": 5.0,
+          "buy_count": 5,
           "sell_count": 0
         },
         "top_newbie_posts": [
           {
             "title": "新手小白一枚，想建仓入场，怎么买入啊？没人教，感觉好复杂。委托买入方式怎么设",
             "url": "https://guba.eastmoney.com/news,sh513500,1741372382.html",
-            "timestamp": "07-30 14:50",
+            "timestamp": "07-30 13:54",
             "score": 66.0,
             "level": "纯小白",
             "reasoning": "帖子「新手小白一枚，想建仓入场，怎么买入啊？没人教，感觉好复杂。委托买入方式怎么设...」 命中2个小信号: 身份自述(8分), 知识求助(6分)。 综合得分66.0分， 判定为「纯小白」 (置信度: medium)。",
@@ -998,7 +988,7 @@
           {
             "title": "新人求指教，现在是买的时机吗",
             "url": "https://guba.eastmoney.com/news,sh513500,1753916628.html",
-            "timestamp": "08-04 14:10",
+            "timestamp": "08-04 14:05",
             "score": 50.0,
             "level": "纯小白",
             "reasoning": "帖子「新人求指教，现在是买的时机吗...」 命中1个小信号: 身份自述(8分)。 以问句结尾，在寻求答案 综合得分50.0分， 判定为「纯小白」 (置信度: low)。",
@@ -1012,7 +1002,7 @@
           {
             "title": "期货涨这里跌？有没有人解释下什么回事？今天溢价比昨天高期货上涨今天跌了…",
             "url": "https://guba.eastmoney.com/news,sh513500,1751597808.html",
-            "timestamp": "07-30 10:37",
+            "timestamp": "07-30 10:29",
             "score": 46.0,
             "level": "偏小白",
             "reasoning": "帖子「期货涨这里跌？有没有人解释下什么回事？今天溢价比昨天高期货上涨今天跌了…...」 命中2个小信号: 知识求助(6分), 短期思维(3分)。 综合得分46.0分， 判定为「偏小白」 (置信度: medium)。",
@@ -1041,7 +1031,7 @@
           {
             "title": "不懂就问，这个是根据什么来涨跌幅的，昨晚不是标普不是跌了0.2吗",
             "url": "https://guba.eastmoney.com/news,sh513500,1747196250.html",
-            "timestamp": "07-21 15:50",
+            "timestamp": "07-21 15:57",
             "score": 42.0,
             "level": "偏小白",
             "reasoning": "帖子「不懂就问，这个是根据什么来涨跌幅的，昨晚不是标普不是跌了0.2吗...」 命中1个小信号: 知识求助(6分)。 以问句结尾，在寻求答案 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
@@ -1067,126 +1057,132 @@
             ]
           },
           {
-            "title": "投资标普500，他说不懂的就买标普，买了就懂了，有谁买了真懂的了，他说的这几个字",
-            "url": "https://guba.eastmoney.com/news,sh513500,1740678069.html",
-            "timestamp": "07-10 13:44",
+            "title": "请问这个是万0.5手续费吗，",
+            "url": "https://guba.eastmoney.com/news,sh513500,1755488183.html",
+            "timestamp": "08-07 18:09",
             "score": 34.0,
             "level": "中间派",
-            "reasoning": "帖子「投资标普500，他说不懂的就买标普，买了就懂了，有谁买了真懂的了，他说的这几个字...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
+            "reasoning": "帖子「请问这个是万0.5手续费吗，...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 请问)"
+            ]
+          },
+          {
+            "title": "大佬们问一下，买入的申购手续费是多少啊",
+            "url": "https://guba.eastmoney.com/news,sh513500,1756115931.html",
+            "timestamp": "08-07 17:14",
+            "score": 34.0,
+            "level": "中间派",
+            "reasoning": "帖子「大佬们问一下，买入的申购手续费是多少啊...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "buy",
             "intent_label": "🟢 买入",
             "key_signals": [
-              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 不懂)"
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 大佬)"
             ]
-          },
-          {
-            "title": "咋还跌了，跟的什么？",
-            "url": "https://guba.eastmoney.com/news,sh513500,1747840397.html",
-            "timestamp": "07-22 13:44",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「咋还跌了，跟的什么？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
           }
         ],
         "latest_posts": [
           {
-            "title": "明天就得砸",
-            "url": "https://guba.eastmoney.com/news,sh513500,1754875328.html",
-            "timestamp": "08-05 23:31",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「明天就得砸...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "手里面拿着现金，等机会的时候也很难受",
-            "url": "https://guba.eastmoney.com/news,sh513500,1754302431.html",
-            "timestamp": "08-05 23:21",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「手里面拿着现金，等机会的时候也很难受...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "有几个人赢过513500？？？？",
-            "url": "https://guba.eastmoney.com/news,sh513500,1754880977.html",
-            "timestamp": "08-05 21:08",
-            "score": 18.0,
-            "level": "偏专业",
-            "reasoning": "帖子「有几个人赢过513500？？？？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "博时标普500交易型开放式指数证券投资基金溢价风险提示公告",
-            "url": "https://guba.eastmoney.com/news,sh513500,1754868969.html",
-            "timestamp": "08-05 20:12",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「博时标普500交易型开放式指数证券投资基金溢价风险提示公告...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "美股四大云财报回答了哪些问题？AI能重回上涨吗？",
-            "url": "https://guba.eastmoney.com/news,of017437,1753571289.html",
-            "timestamp": "08-05 19:06",
-            "score": 18.0,
-            "level": "偏专业",
-            "reasoning": "帖子「美股四大云财报回答了哪些问题？AI能重回上涨吗？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "我是这么操作这只ETF的，欢迎股友一起讨论",
-            "url": "https://guba.eastmoney.com/news,yyhd,1754302679.html",
-            "timestamp": "08-05 18:49",
-            "score": 0,
-            "level": "专业投资者",
-            "reasoning": "帖子「我是这么操作这只ETF的，欢迎股友一起讨论...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "title": "请问这个是万0.5手续费吗，",
+            "url": "https://guba.eastmoney.com/news,sh513500,1755488183.html",
+            "timestamp": "08-07 18:09",
+            "score": 34.0,
+            "level": "中间派",
+            "reasoning": "帖子「请问这个是万0.5手续费吗，...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 请问)"
             ]
           },
           {
-            "title": "买美股QDII，大跌和溢价小，至少等一个",
-            "url": "https://guba.eastmoney.com/news,sh513500,1753708474.html",
-            "timestamp": "08-05 15:57",
+            "title": "大佬们问一下，买入的申购手续费是多少啊",
+            "url": "https://guba.eastmoney.com/news,sh513500,1756115931.html",
+            "timestamp": "08-07 17:14",
+            "score": 34.0,
+            "level": "中间派",
+            "reasoning": "帖子「大佬们问一下，买入的申购手续费是多少啊...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "buy",
+            "intent_label": "🟢 买入",
+            "key_signals": [
+              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 大佬)"
+            ]
+          },
+          {
+            "title": "先出去了今日成交股票：操作原因：先下车，祝各位曲线向上",
+            "url": "https://guba.eastmoney.com/news,sh513500,1756091114.html",
+            "timestamp": "08-07 16:49",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「买美股QDII，大跌和溢价小，至少等一个...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「先出去了今日成交股票：操作原因：先下车，祝各位曲线向上...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "sell",
+            "intent_label": "🔴 卖出",
+            "key_signals": []
+          },
+          {
+            "title": "别管他们怎么跌，咱们买就完了。溢价干到30%，嘎嘎香。",
+            "url": "https://guba.eastmoney.com/news,sh513500,1755610125.html",
+            "timestamp": "08-07 15:25",
+            "score": 30.0,
+            "level": "中间派",
+            "reasoning": "帖子「别管他们怎么跌，咱们买就完了。溢价干到30%，嘎嘎香。...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
             "sentiment": -1.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 完了)"
+            ]
+          },
+          {
+            "title": "怎么这么多短线的跑来买这个",
+            "url": "https://guba.eastmoney.com/news,sh513500,1755995394.html",
+            "timestamp": "08-07 15:20",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「怎么这么多短线的跑来买这个...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "涨溢价了",
-            "url": "https://guba.eastmoney.com/news,sh513500,1754803856.html",
-            "timestamp": "08-05 15:23",
-            "score": 22.0,
-            "level": "中间派",
-            "reasoning": "帖子「涨溢价了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "title": "成交量呢，量能呢，狂热的情绪呢？都跑哪里去了",
+            "url": "https://guba.eastmoney.com/news,sh513500,1755967293.html",
+            "timestamp": "08-07 14:43",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「成交量呢，量能呢，狂热的情绪呢？都跑哪里去了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "挺稳定的，只要不是科技那样大回撤，就拿着",
+            "url": "https://guba.eastmoney.com/news,sh513500,1756031998.html",
+            "timestamp": "08-07 14:40",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「挺稳定的，只要不是科技那样大回撤，就拿着...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "怎么一天都在画地图",
+            "url": "https://guba.eastmoney.com/news,sh513500,1756006420.html",
+            "timestamp": "08-07 14:32",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「怎么一天都在画地图...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
@@ -1198,23 +1194,37 @@
         "index": 16.0,
         "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 372,
-          "valid_posts": 372,
+          "total_posts": 374,
+          "valid_posts": 374,
           "spam_posts": 0,
-          "newbie_posts": 62,
+          "newbie_posts": 64,
           "pure_newbie": 0,
-          "newbie_ratio": 16.7,
+          "newbie_ratio": 17.1,
           "avg_newbie_score": 24.3,
-          "avg_sentiment": 16.1,
+          "avg_sentiment": 15.6,
           "purity_signal": 0.0,
           "activity": 100,
-          "mom_buy_index": 9.0,
-          "mom_sell_index": 8.4,
-          "buy_sell_ratio": 1.5,
+          "mom_buy_index": 8.9,
+          "mom_sell_index": 7.8,
+          "buy_sell_ratio": 2.0,
           "buy_count": 6,
-          "sell_count": 4
+          "sell_count": 3
         },
         "top_newbie_posts": [
+          {
+            "title": "银行要翻红。今天能不能805收盘？",
+            "url": "https://guba.eastmoney.com/news,sh512800,1755315587.html",
+            "timestamp": "08-06 13:58",
+            "score": 46.0,
+            "level": "偏小白",
+            "reasoning": "帖子「银行要翻红。今天能不能805收盘？...」 命中1个小信号: 决策依赖(7分)。 以问句结尾，在寻求答案 综合得分46.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+            ]
+          },
           {
             "title": "我小登杀进来了拉爆可以吗",
             "url": "https://guba.eastmoney.com/news,sh512800,1751874099.html",
@@ -1258,20 +1268,6 @@
             ]
           },
           {
-            "title": "该不该把你接回来",
-            "url": "https://guba.eastmoney.com/news,sh512800,1748230336.html",
-            "timestamp": "07-23 11:28",
-            "score": 38.0,
-            "level": "偏小白",
-            "reasoning": "帖子「该不该把你接回来...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 该不该)"
-            ]
-          },
-          {
             "title": "拉银行什么意思",
             "url": "https://guba.eastmoney.com/news,sh512800,1752463391.html",
             "timestamp": "07-31 10:09",
@@ -1286,18 +1282,16 @@
             ]
           },
           {
-            "title": "各大神，请问此基金分利是几时发",
-            "url": "https://guba.eastmoney.com/news,sh512800,1747352912.html",
-            "timestamp": "07-22 06:24",
-            "score": 34.0,
+            "title": "老登里面跌得最多？",
+            "url": "https://guba.eastmoney.com/news,sh512800,1755925218.html",
+            "timestamp": "08-07 13:34",
+            "score": 30.0,
             "level": "中间派",
-            "reasoning": "帖子「各大神，请问此基金分利是几时发...」 命中1个小信号: 知识求助(6分)。 综合得分34.0分， 判定为「中间派」 (置信度: low)。",
+            "reasoning": "帖子「老登里面跌得最多？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「知识求助」在问基础问题（怎么买/在哪看/什么意思） (命中: 请问)"
-            ]
+            "key_signals": []
           },
           {
             "title": "我太失败了，割肉半导体，来这里想回本，又套了，有意思不？太欺负人",
@@ -1328,163 +1322,147 @@
         ],
         "latest_posts": [
           {
-            "title": "我是这么操作这只ETF的，欢迎股友一起讨论",
-            "url": "https://guba.eastmoney.com/news,yyhd,1754513937.html",
-            "timestamp": "08-05 21:55",
+            "title": "今天主力进场放量了，我也跟进来看看，下周一拉高就跑",
+            "url": "https://guba.eastmoney.com/news,sh512800,1756124470.html",
+            "timestamp": "08-07 18:35",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「今天主力进场放量了，我也跟进来看看，下周一拉高就跑...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "晒一下我的操作记录，欢迎股友一起讨论",
+            "url": "https://guba.eastmoney.com/news,yyhd,1755593026.html",
+            "timestamp": "08-07 16:32",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「晒一下我的操作记录，欢迎股友一起讨论...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "中际旭创都被砸爆了都拉不起来，看来银行还要跌",
+            "url": "https://guba.eastmoney.com/news,sh512800,1756028293.html",
+            "timestamp": "08-07 15:42",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「中际旭创都被砸爆了都拉不起来，看来银行还要跌...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "第三季度应该降准降息！银行会有拉爆的那一天",
+            "url": "https://guba.eastmoney.com/news,sh512800,1756002959.html",
+            "timestamp": "08-07 14:29",
             "score": 0,
             "level": "专业投资者",
-            "reasoning": "帖子「我是这么操作这只ETF的，欢迎股友一起讨论...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "reasoning": "帖子「第三季度应该降准降息！银行会有拉爆的那一天...」 命中1个专业信号: 数据引用(-4分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
+              "「数据引用」引用具体数据/财报/宏观经济指标 (命中: 降息)"
             ]
           },
           {
-            "title": "$银行ETF华宝(SH512800)$",
-            "url": "https://guba.eastmoney.com/news,sh512800,1754894346.html",
-            "timestamp": "08-05 21:11",
-            "score": 0,
-            "level": "专业投资者",
-            "reasoning": "帖子「$银行ETF华宝(SH512800)$...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
-            ]
-          },
-          {
-            "title": "银行相当于大A扫地机，盘面走的好自然没有什么东西可扫，等盘面不好的时候就是它出场",
-            "url": "https://guba.eastmoney.com/news,sh512800,1754887168.html",
-            "timestamp": "08-05 20:39",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「银行相当于大A扫地机，盘面走的好自然没有什么东西可扫，等盘面不好的时候就是它出场...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "观望硬科技许久的朋友今天收获不错行情，$南方中国梦灵活配置混合C$涨幅9.97％",
-            "url": "https://guba.eastmoney.com/news,sh512800,1754882723.html",
-            "timestamp": "08-05 20:19",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「观望硬科技许久的朋友今天收获不错行情，$南方中国梦灵活配置混合C$涨幅9.97％...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "最害怕的还是银行上涨",
-            "url": "https://guba.eastmoney.com/news,sh512800,1754729975.html",
-            "timestamp": "08-05 19:31",
+            "title": "大盘这个走势感觉还得跌",
+            "url": "https://guba.eastmoney.com/news,sh512800,1755966168.html",
+            "timestamp": "08-07 14:23",
             "score": 22.0,
             "level": "中间派",
-            "reasoning": "帖子「最害怕的还是银行上涨...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「大盘这个走势感觉还得跌...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "两天跌了五个点，还有天理还有王法么",
-            "url": "https://guba.eastmoney.com/news,sh512800,1754855761.html",
-            "timestamp": "08-05 19:10",
+            "title": "0.793可以成交吗，别装了好吗",
+            "url": "https://guba.eastmoney.com/news,sh512800,1755965018.html",
+            "timestamp": "08-07 13:47",
+            "score": 18.0,
+            "level": "偏专业",
+            "reasoning": "帖子「0.793可以成交吗，别装了好吗...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "科技这一波10天左右。其他的自己去琢磨吧。",
+            "url": "https://guba.eastmoney.com/news,sh512800,1755864281.html",
+            "timestamp": "08-07 13:46",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「两天跌了五个点，还有天理还有王法么...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「科技这一波10天左右。其他的自己去琢磨吧。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "银行把作为工具的功能展现的淋漓尽致",
-            "url": "https://guba.eastmoney.com/news,sh512800,1754813447.html",
-            "timestamp": "08-05 15:47",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「银行把作为工具的功能展现的淋漓尽致...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "买入了",
-            "url": "https://guba.eastmoney.com/news,sh512800,1754806483.html",
-            "timestamp": "08-05 15:43",
+            "title": "这波会跌道多少",
+            "url": "https://guba.eastmoney.com/news,sh512800,1755924003.html",
+            "timestamp": "08-07 13:38",
             "score": 22.0,
             "level": "中间派",
-            "reasoning": "帖子「买入了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「这波会跌道多少...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
             "key_signals": []
           }
         ]
       },
       "baijiu": {
-        "index": 19.7,
+        "index": 15.4,
         "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 398,
-          "valid_posts": 398,
+          "total_posts": 399,
+          "valid_posts": 399,
           "spam_posts": 0,
-          "newbie_posts": 46,
-          "pure_newbie": 1,
-          "newbie_ratio": 11.6,
-          "avg_newbie_score": 25.8,
-          "avg_sentiment": 41.3,
-          "purity_signal": 2.2,
+          "newbie_posts": 52,
+          "pure_newbie": 0,
+          "newbie_ratio": 13.0,
+          "avg_newbie_score": 25.5,
+          "avg_sentiment": 19.2,
+          "purity_signal": 0.0,
           "activity": 100,
-          "mom_buy_index": 14.7,
-          "mom_sell_index": 11.4,
-          "buy_sell_ratio": 3.0,
-          "buy_count": 9,
-          "sell_count": 3
+          "mom_buy_index": 12.0,
+          "mom_sell_index": 13.8,
+          "buy_sell_ratio": 1.6,
+          "buy_count": 8,
+          "sell_count": 5
         },
         "top_newbie_posts": [
           {
-            "title": "前天刚入，今天能起来不？",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754328463.html",
-            "timestamp": "08-05 09:16",
-            "score": 50.0,
-            "level": "纯小白",
-            "reasoning": "帖子「前天刚入，今天能起来不？...」 命中1个小信号: 身份自述(8分)。 以问句结尾，在寻求答案 综合得分50.0分， 判定为「纯小白」 (置信度: low)。",
-            "sentiment": 0.0,
+            "title": "白酒每次反弹很少低于1毛钱，0.378-0.478才1毛，这就反弹完了吗？",
+            "url": "https://guba.eastmoney.com/news,sh512690,1755822269.html",
+            "timestamp": "08-07 11:01",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「白酒每次反弹很少低于1毛钱，0.378-0.478才1毛，这就反弹完了吗？...」 命中1个小信号: 情绪恐慌(5分)。 以问句结尾，在寻求答案 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": -1.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「身份自述」明确自称小白/新手/刚入门/宝妈 (命中: 刚入)"
+              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 完了)"
             ]
           },
           {
-            "title": "拿了快一年了，要不要割了",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754675700.html",
-            "timestamp": "08-05 17:41",
+            "title": "今天过生日套好几天了主力能不能给点力",
+            "url": "https://guba.eastmoney.com/news,sh512690,1755105314.html",
+            "timestamp": "08-06 17:46",
             "score": 38.0,
             "level": "偏小白",
-            "reasoning": "帖子「拿了快一年了，要不要割了...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "sell",
-            "intent_label": "🔴 卖出",
-            "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 要不要)"
-            ]
-          },
-          {
-            "title": "能不能红呀今天",
-            "url": "https://guba.eastmoney.com/news,sh512690,1752749665.html",
-            "timestamp": "07-31 14:41",
-            "score": 38.0,
-            "level": "偏小白",
-            "reasoning": "帖子「能不能红呀今天...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "reasoning": "帖子「今天过生日套好几天了主力能不能给点力...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
@@ -1493,154 +1471,9 @@
             ]
           },
           {
-            "title": "垃圾白酒消费以后都没戏了割肉三万",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754449147.html",
-            "timestamp": "08-05 10:07",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「垃圾白酒消费以后都没戏了割肉三万...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": -1.0,
-            "intent": "sell",
-            "intent_label": "🔴 卖出",
-            "key_signals": [
-              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 割肉)"
-            ]
-          },
-          {
-            "title": "吓死了，昨天清空了，挣了80",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754400320.html",
-            "timestamp": "08-05 09:50",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「吓死了，昨天清空了，挣了80...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 吓死)"
-            ]
-          },
-          {
-            "title": "0.4以下是割肉区，主力拿完筹码就拉高让新进来的接盘再继续砸，白酒没有持续性，不",
-            "url": "https://guba.eastmoney.com/news,sh512690,1753833912.html",
-            "timestamp": "08-04 15:00",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「0.4以下是割肉区，主力拿完筹码就拉高让新进来的接盘再继续砸，白酒没有持续性，不...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": -1.0,
-            "intent": "sell",
-            "intent_label": "🔴 卖出",
-            "key_signals": [
-              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 割肉)"
-            ]
-          },
-          {
-            "title": "上涨结束了？",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754024661.html",
-            "timestamp": "08-04 13:39",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「上涨结束了？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "完了，行情要回归到科技单边上升了",
-            "url": "https://guba.eastmoney.com/news,sh512690,1753712833.html",
-            "timestamp": "08-04 09:25",
-            "score": 30.0,
-            "level": "中间派",
-            "reasoning": "帖子「完了，行情要回归到科技单边上升了...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": -1.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": [
-              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 完了)"
-            ]
-          }
-        ],
-        "latest_posts": [
-          {
-            "title": "420可买底仓。",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754921333.html",
-            "timestamp": "08-05 23:04",
-            "score": 22.0,
-            "level": "中间派",
-            "reasoning": "帖子「420可买底仓。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "酒明天最多涨1个点，然后回落，因为科技股和创新药太强，探底回升再次拉升",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754909161.html",
-            "timestamp": "08-05 22:08",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「酒明天最多涨1个点，然后回落，因为科技股和创新药太强，探底回升再次拉升...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "有人割了，资金量上来了，现在去追科技吗",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754829990.html",
-            "timestamp": "08-05 19:47",
-            "score": 18.0,
-            "level": "偏专业",
-            "reasoning": "帖子「有人割了，资金量上来了，现在去追科技吗...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "今天买了70000股，小仓位买入",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754862936.html",
-            "timestamp": "08-05 18:33",
-            "score": 9.2,
-            "level": "专业投资者",
-            "reasoning": "帖子「今天买了70000股，小仓位买入...」 命中1个小信号: 短期思维(3分)。 命中1个专业信号: 策略思维(-4分)。 综合得分9.2分， 判定为「专业投资者」 (置信度: medium)。",
-            "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「短期思维」关注明天/后天/今天涨跌，非长期视角 (命中: 今天买)",
-              "「策略思维」讨论定投/仓位/分散/对冲/止损等策略 (命中: 仓位)"
-            ]
-          },
-          {
-            "title": "今天小买了一点，调整就是买。",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754836360.html",
-            "timestamp": "08-05 18:32",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「今天小买了一点，调整就是买。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": []
-          },
-          {
-            "title": "这位置高吗",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754854332.html",
-            "timestamp": "08-05 18:22",
-            "score": 18.0,
-            "level": "偏专业",
-            "reasoning": "帖子「这位置高吗...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
             "title": "拿了快一年了，要不要割了",
             "url": "https://guba.eastmoney.com/news,sh512690,1754675700.html",
-            "timestamp": "08-05 17:41",
+            "timestamp": "08-06 14:48",
             "score": 38.0,
             "level": "偏小白",
             "reasoning": "帖子「拿了快一年了，要不要割了...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
@@ -1652,60 +1485,202 @@
             ]
           },
           {
-            "title": "主力你赢了，453我都一毛没减仓，想着你硬气一点，8月份再冲一波。昨天446我都",
-            "url": "https://guba.eastmoney.com/news,sh512690,1754798608.html",
-            "timestamp": "08-05 17:40",
-            "score": 26.0,
-            "level": "中间派",
-            "reasoning": "帖子「主力你赢了，453我都一毛没减仓，想着你硬气一点，8月份再冲一波。昨天446我都...」 命中1个小信号: 过度乐观(4分)。 综合得分26.0分， 判定为「中间派」 (置信度: low)。",
-            "sentiment": 1.0,
+            "title": "能不能干脆一点拉起来，加油加油加油加油加油加油加油加油加油",
+            "url": "https://guba.eastmoney.com/news,sh512690,1755363641.html",
+            "timestamp": "08-06 14:16",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「能不能干脆一点拉起来，加油加油加油加油加油加油加油加油加油...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": [
-              "「过度乐观」非理性乐观（梭哈/稳赚/必涨/躺赚） (命中: 冲)"
+              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
             ]
+          },
+          {
+            "title": "，能不能快点跌，天天1个点，真墨迹",
+            "url": "https://guba.eastmoney.com/news,sh512690,1755242172.html",
+            "timestamp": "08-06 11:29",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「，能不能快点跌，天天1个点，真墨迹...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+            ]
+          },
+          {
+            "title": "酒能不能也拉一波",
+            "url": "https://guba.eastmoney.com/news,sh512690,1754930621.html",
+            "timestamp": "08-06 01:47",
+            "score": 38.0,
+            "level": "偏小白",
+            "reasoning": "帖子「酒能不能也拉一波...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 能不能)"
+            ]
+          },
+          {
+            "title": "完了",
+            "url": "https://guba.eastmoney.com/news,sh512690,1755716860.html",
+            "timestamp": "08-07 10:07",
+            "score": 30.0,
+            "level": "中间派",
+            "reasoning": "帖子「完了...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
+            "sentiment": -1.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 完了)"
+            ]
+          },
+          {
+            "title": "天呐，这也太惨了吧，五连跌了",
+            "url": "https://guba.eastmoney.com/news,sh512690,1755704943.html",
+            "timestamp": "08-07 10:02",
+            "score": 30.0,
+            "level": "中间派",
+            "reasoning": "帖子「天呐，这也太惨了吧，五连跌了...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 太惨)"
+            ]
+          }
+        ],
+        "latest_posts": [
+          {
+            "title": "今天收红验证昨天预判深V，调整宣布结束！",
+            "url": "https://guba.eastmoney.com/news,sh512690,1756074787.html",
+            "timestamp": "08-07 18:20",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「今天收红验证昨天预判深V，调整宣布结束！...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "$酒ETF鹏华(SH512690)$",
+            "url": "https://guba.eastmoney.com/news,sh512690,1756135889.html",
+            "timestamp": "08-07 18:17",
+            "score": 0,
+            "level": "专业投资者",
+            "reasoning": "帖子「$酒ETF鹏华(SH512690)$...」 命中1个专业信号: 专业术语(-5分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": [
+              "「专业术语」使用PE/PB/ROE/基本面/技术面/估值等专业词汇 (命中: ETF)"
+            ]
+          },
+          {
+            "title": "涨了一里太刺激，太兴奋了，丢了。。。",
+            "url": "https://guba.eastmoney.com/news,sh512690,1756082672.html",
+            "timestamp": "08-07 17:45",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「涨了一里太刺激，太兴奋了，丢了。。。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "看看医疗，白酒版本逆子",
+            "url": "https://guba.eastmoney.com/news,sh512690,1756124808.html",
+            "timestamp": "08-07 17:23",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「看看医疗，白酒版本逆子...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "酒，大盘都涨1个点，酒还没起色",
+            "url": "https://guba.eastmoney.com/news,sh512690,1756123558.html",
+            "timestamp": "08-07 17:18",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「酒，大盘都涨1个点，酒还没起色...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "吃肉了",
+            "url": "https://guba.eastmoney.com/news,sh512690,1756116099.html",
+            "timestamp": "08-07 16:49",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「吃肉了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "不能重仓一个板块，心态不稳",
+            "url": "https://guba.eastmoney.com/news,sh512690,1756111647.html",
+            "timestamp": "08-07 16:32",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「不能重仓一个板块，心态不稳...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "比医药烂太多了",
+            "url": "https://guba.eastmoney.com/news,sh512690,1756107548.html",
+            "timestamp": "08-07 16:16",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「比医药烂太多了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
           }
         ]
       },
       "hs300": {
-        "index": 16.2,
+        "index": 14.2,
         "interpretation": "🔵 极度冷清 — 小白沉默不语，可能是市场底部信号",
         "details": {
-          "total_posts": 361,
-          "valid_posts": 361,
+          "total_posts": 342,
+          "valid_posts": 342,
           "spam_posts": 0,
-          "newbie_posts": 21,
+          "newbie_posts": 19,
           "pure_newbie": 0,
-          "newbie_ratio": 5.8,
-          "avg_newbie_score": 28.7,
-          "avg_sentiment": 33.3,
+          "newbie_ratio": 5.6,
+          "avg_newbie_score": 27.1,
+          "avg_sentiment": 26.3,
           "purity_signal": 0.0,
           "activity": 100,
-          "mom_buy_index": 9.0,
-          "mom_sell_index": 28.8,
-          "buy_sell_ratio": 0.2,
+          "mom_buy_index": 9.5,
+          "mom_sell_index": 21.9,
+          "buy_sell_ratio": 0.3,
           "buy_count": 2,
-          "sell_count": 9
+          "sell_count": 6
         },
         "top_newbie_posts": [
           {
-            "title": "下午卖了，痛快割肉",
-            "url": "https://guba.eastmoney.com/news,sh510300,1751905831.html",
-            "timestamp": "07-30 12:55",
-            "score": 42.0,
-            "level": "偏小白",
-            "reasoning": "帖子「下午卖了，痛快割肉...」 命中1个小信号: 情绪恐慌(5分)。 标题极短+情绪化，典型小白特征 综合得分42.0分， 判定为「偏小白」 (置信度: low)。",
-            "sentiment": -1.0,
-            "intent": "sell",
-            "intent_label": "🔴 卖出",
-            "key_signals": [
-              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 割肉)"
-            ]
-          },
-          {
             "title": "上证涨多少你能不能看一下",
             "url": "https://guba.eastmoney.com/news,sh510300,1754473344.html",
-            "timestamp": "08-05 11:05",
+            "timestamp": "08-05 11:23",
             "score": 38.0,
             "level": "偏小白",
             "reasoning": "帖子「上证涨多少你能不能看一下...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
@@ -1719,7 +1694,7 @@
           {
             "title": "还有200块钱回本了，要不要走啊",
             "url": "https://guba.eastmoney.com/news,sh510300,1752760263.html",
-            "timestamp": "07-31 19:39",
+            "timestamp": "07-31 14:33",
             "score": 38.0,
             "level": "偏小白",
             "reasoning": "帖子「还有200块钱回本了，要不要走啊...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
@@ -1745,23 +1720,9 @@
             ]
           },
           {
-            "title": "明天交割日，最快明天下午，或者下周才知道死猫到底还要不要跳一下。",
-            "url": "https://guba.eastmoney.com/news,sh510300,1752072882.html",
-            "timestamp": "07-30 20:02",
-            "score": 38.0,
-            "level": "偏小白",
-            "reasoning": "帖子「明天交割日，最快明天下午，或者下周才知道死猫到底还要不要跳一下。...」 命中1个小信号: 决策依赖(7分)。 综合得分38.0分， 判定为「偏小白」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "sell",
-            "intent_label": "🔴 卖出",
-            "key_signals": [
-              "「决策依赖」请求他人替自己做投资决策（该不该/要不要/能不能） (命中: 要不要)"
-            ]
-          },
-          {
             "title": "明天会大跌吗",
             "url": "https://guba.eastmoney.com/news,sh510300,1754030812.html",
-            "timestamp": "08-04 14:39",
+            "timestamp": "08-04 14:40",
             "score": 30.0,
             "level": "中间派",
             "reasoning": "帖子「明天会大跌吗...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
@@ -1795,102 +1756,126 @@
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
+          },
+          {
+            "title": "割肉的挺多啊",
+            "url": "https://guba.eastmoney.com/news,sh510300,1752422392.html",
+            "timestamp": "07-31 10:15",
+            "score": 30.0,
+            "level": "中间派",
+            "reasoning": "帖子「割肉的挺多啊...」 命中1个小信号: 情绪恐慌(5分)。 综合得分30.0分， 判定为「中间派」 (置信度: low)。",
+            "sentiment": -1.0,
+            "intent": "sell",
+            "intent_label": "🔴 卖出",
+            "key_signals": [
+              "「情绪恐慌」表达明显的恐惧/焦虑/后悔情绪 (命中: 割肉)"
+            ]
+          },
+          {
+            "title": "最低点是谁在买？",
+            "url": "https://guba.eastmoney.com/news,sh510300,1752003445.html",
+            "timestamp": "07-31 09:37",
+            "score": 30.0,
+            "level": "中间派",
+            "reasoning": "帖子「最低点是谁在买？...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
           }
         ],
         "latest_posts": [
           {
-            "title": "市场流动性环境边际改善，硬科技成长赛道对流动性变化较为敏感，半导体设备材料率先感",
-            "url": "https://guba.eastmoney.com/news,sh510300,1754919563.html",
-            "timestamp": "08-05 22:54",
+            "title": "市场还是没量，科技B反是确定的，后面还有C浪下跌，B什么时候走完不知道，看个人风",
+            "url": "https://guba.eastmoney.com/news,sh510300,1755970006.html",
+            "timestamp": "08-07 17:16",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「市场流动性环境边际改善，硬科技成长赛道对流动性变化较为敏感，半导体设备材料率先感...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「市场还是没量，科技B反是确定的，后面还有C浪下跌，B什么时候走完不知道，看个人风...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "大家好！",
-            "url": "https://guba.eastmoney.com/news,mnzh,1754918165.html",
-            "timestamp": "08-05 22:45",
+            "title": "这货！永远是一个害人精！",
+            "url": "https://guba.eastmoney.com/news,sh510300,1756029771.html",
+            "timestamp": "08-07 15:09",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「大家好！...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「这货！永远是一个害人精！...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "上班族每月结余资金可以小额定投硬科技，今天南方中国梦C涨幅9.97％，半导体材料",
-            "url": "https://guba.eastmoney.com/news,sh510300,1754881358.html",
-            "timestamp": "08-05 20:14",
-            "score": 0,
-            "level": "专业投资者",
-            "reasoning": "帖子「上班族每月结余资金可以小额定投硬科技，今天南方中国梦C涨幅9.97％，半导体材料...」 命中1个专业信号: 策略思维(-4分)。 综合得分0分， 判定为「专业投资者」 (置信度: low)。",
-            "sentiment": 0.0,
-            "intent": "buy",
-            "intent_label": "🟢 买入",
-            "key_signals": [
-              "「策略思维」讨论定投/仓位/分散/对冲/止损等策略 (命中: 定投)"
-            ]
-          },
-          {
-            "title": "线下阳线卖，明天必须突破，否则就只能减仓了！",
-            "url": "https://guba.eastmoney.com/news,sh510300,1754878769.html",
-            "timestamp": "08-05 20:00",
+            "title": "红土创新新兴产业混合A最近表现确实不错，昨天已经三连涨，近一年的回报达到153.",
+            "url": "https://guba.eastmoney.com/news,sh510300,1756028583.html",
+            "timestamp": "08-07 15:07",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「线下阳线卖，明天必须突破，否则就只能减仓了！...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「红土创新新兴产业混合A最近表现确实不错，昨天已经三连涨，近一年的回报达到153....」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "跑路了，现在剩一点点黄金",
+            "url": "https://guba.eastmoney.com/news,sh510300,1755955037.html",
+            "timestamp": "08-07 15:07",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「跑路了，现在剩一点点黄金...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "sentiment": 0.0,
+            "intent": "neutral",
+            "intent_label": "⚪ 观望",
+            "key_signals": []
+          },
+          {
+            "title": "清仓休息了，卖卖卖卖卖卖卖卖",
+            "url": "https://guba.eastmoney.com/news,sh510300,1756023501.html",
+            "timestamp": "08-07 15:07",
+            "score": 10.0,
+            "level": "偏专业",
+            "reasoning": "帖子「清仓休息了，卖卖卖卖卖卖卖卖...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "sell",
             "intent_label": "🔴 卖出",
             "key_signals": []
           },
           {
-            "title": "怎么情况啊，上证深证创业板北证科创，你一个没跑赢啊",
-            "url": "https://guba.eastmoney.com/news,sh510300,1754776214.html",
-            "timestamp": "08-05 18:57",
+            "title": "你快跌吧。你不跌。几乎老登都不涨",
+            "url": "https://guba.eastmoney.com/news,sh510300,1756003984.html",
+            "timestamp": "08-07 15:01",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「怎么情况啊，上证深证创业板北证科创，你一个没跑赢啊...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「你快跌吧。你不跌。几乎老登都不涨...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "科技和大金融跷跷板。涨跌都太小。",
-            "url": "https://guba.eastmoney.com/news,sh510300,1754794318.html",
-            "timestamp": "08-05 17:03",
+            "title": "又来降温了",
+            "url": "https://guba.eastmoney.com/news,sh510300,1755994469.html",
+            "timestamp": "08-07 14:30",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「科技和大金融跷跷板。涨跌都太小。...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「又来降温了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
             "key_signals": []
           },
           {
-            "title": "可以降温了！",
-            "url": "https://guba.eastmoney.com/news,sh510300,1754778399.html",
-            "timestamp": "08-05 16:34",
+            "title": "向世界展示大国科技实力，中国脊梁挺起来了",
+            "url": "https://guba.eastmoney.com/news,sh510300,1755978594.html",
+            "timestamp": "08-07 14:29",
             "score": 10.0,
             "level": "偏专业",
-            "reasoning": "帖子「可以降温了！...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
-            "sentiment": 0.0,
-            "intent": "neutral",
-            "intent_label": "⚪ 观望",
-            "key_signals": []
-          },
-          {
-            "title": "国内成熟制程晶圆产能持续扩张，上游半导体设备采购需求稳步抬升，设备企业订单预期持",
-            "url": "https://guba.eastmoney.com/news,sh510300,1754758287.html",
-            "timestamp": "08-05 16:20",
-            "score": 10.0,
-            "level": "偏专业",
-            "reasoning": "帖子「国内成熟制程晶圆产能持续扩张，上游半导体设备采购需求稳步抬升，设备企业订单预期持...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
+            "reasoning": "帖子「向世界展示大国科技实力，中国脊梁挺起来了...」 未命中明确的信号词，内容较短或信息不足。 根据有限信息判定为中间派。",
             "sentiment": 0.0,
             "intent": "neutral",
             "intent_label": "⚪ 观望",
@@ -1903,78 +1888,78 @@
   "sector_history": {
     "nasdaq": [
       {
-        "date": "2026-07-31",
-        "index": 25.7
-      },
-      {
-        "date": "2026-08-03",
-        "index": 12.4
-      },
-      {
         "date": "2026-08-04",
-        "index": 14.8
+        "index": 14.9
       },
       {
         "date": "2026-08-05",
-        "index": 15.0
+        "index": 14.6
+      },
+      {
+        "date": "2026-08-06",
+        "index": 7.6
+      },
+      {
+        "date": "2026-08-07",
+        "index": 13.5
       }
     ],
     "gold": [
       {
-        "date": "2026-07-24",
-        "index": 14.9
-      },
-      {
-        "date": "2026-07-27",
-        "index": 31.0
-      },
-      {
-        "date": "2026-07-28",
-        "index": 7.5
-      },
-      {
-        "date": "2026-07-29",
-        "index": 9.8
-      },
-      {
         "date": "2026-07-30",
-        "index": 18.5
+        "index": 21.8
       },
       {
         "date": "2026-07-31",
-        "index": 25.4
+        "index": 23.2
       },
-      {
-        "date": "2026-08-03",
-        "index": 10.8
-      },
-      {
-        "date": "2026-08-04",
-        "index": 15.3
-      },
-      {
-        "date": "2026-08-05",
-        "index": 18.1
-      }
-    ],
-    "cpo": [
-      {
-        "date": "2026-08-05",
-        "index": 20.7
-      }
-    ],
-    "semiconductor": [
       {
         "date": "2026-08-03",
         "index": 22.2
       },
       {
         "date": "2026-08-04",
-        "index": 15.7
+        "index": 11.0
       },
       {
         "date": "2026-08-05",
+        "index": 21.3
+      },
+      {
+        "date": "2026-08-06",
+        "index": 17.3
+      },
+      {
+        "date": "2026-08-07",
         "index": 17.5
+      }
+    ],
+    "cpo": [
+      {
+        "date": "2026-08-05",
+        "index": 0.0
+      },
+      {
+        "date": "2026-08-06",
+        "index": 20.5
+      },
+      {
+        "date": "2026-08-07",
+        "index": 18.9
+      }
+    ],
+    "semiconductor": [
+      {
+        "date": "2026-08-05",
+        "index": 18.0
+      },
+      {
+        "date": "2026-08-06",
+        "index": 21.6
+      },
+      {
+        "date": "2026-08-07",
+        "index": 19.7
       }
     ],
     "sp500": [
@@ -2016,7 +2001,7 @@
       },
       {
         "date": "2026-07-17",
-        "index": 9.0
+        "index": 9.3
       },
       {
         "date": "2026-07-20",
@@ -2024,11 +2009,11 @@
       },
       {
         "date": "2026-07-21",
-        "index": 12.7
+        "index": 12.9
       },
       {
         "date": "2026-07-22",
-        "index": 10.0
+        "index": 9.9
       },
       {
         "date": "2026-07-23",
@@ -2044,7 +2029,7 @@
       },
       {
         "date": "2026-07-28",
-        "index": 11.9
+        "index": 11.7
       },
       {
         "date": "2026-07-29",
@@ -2068,29 +2053,21 @@
       },
       {
         "date": "2026-08-05",
-        "index": 11.9
+        "index": 10.8
+      },
+      {
+        "date": "2026-08-06",
+        "index": 10.1
+      },
+      {
+        "date": "2026-08-07",
+        "index": 12.2
       }
     ],
     "bank": [
       {
-        "date": "2026-07-21",
-        "index": 0.0
-      },
-      {
-        "date": "2026-07-22",
-        "index": 17.2
-      },
-      {
-        "date": "2026-07-23",
-        "index": 12.4
-      },
-      {
-        "date": "2026-07-24",
-        "index": 0.0
-      },
-      {
         "date": "2026-07-27",
-        "index": 9.1
+        "index": 8.8
       },
       {
         "date": "2026-07-28",
@@ -2106,7 +2083,7 @@
       },
       {
         "date": "2026-07-31",
-        "index": 11.9
+        "index": 12.0
       },
       {
         "date": "2026-08-03",
@@ -2118,31 +2095,35 @@
       },
       {
         "date": "2026-08-05",
+        "index": 20.3
+      },
+      {
+        "date": "2026-08-06",
+        "index": 16.2
+      },
+      {
+        "date": "2026-08-07",
         "index": 16.0
       }
     ],
     "baijiu": [
       {
-        "date": "2026-07-31",
-        "index": 20.4
-      },
-      {
-        "date": "2026-08-03",
-        "index": 28.0
-      },
-      {
-        "date": "2026-08-04",
-        "index": 19.0
-      },
-      {
         "date": "2026-08-05",
-        "index": 19.7
+        "index": 12.6
+      },
+      {
+        "date": "2026-08-06",
+        "index": 18.5
+      },
+      {
+        "date": "2026-08-07",
+        "index": 15.4
       }
     ],
     "hs300": [
       {
         "date": "2026-07-30",
-        "index": 23.9
+        "index": 0.0
       },
       {
         "date": "2026-07-31",
@@ -2150,29 +2131,29 @@
       },
       {
         "date": "2026-08-03",
-        "index": 13.7
+        "index": 13.8
       },
       {
         "date": "2026-08-04",
-        "index": 18.2
+        "index": 18.4
       },
       {
         "date": "2026-08-05",
-        "index": 16.2
+        "index": 10.3
+      },
+      {
+        "date": "2026-08-06",
+        "index": 0.0
+      },
+      {
+        "date": "2026-08-07",
+        "index": 14.2
       }
     ]
   },
-  "record_count": 33,
+  "record_count": 35,
   "etf_prices": {
     "nasdaq": [
-      {
-        "date": "2026-05-12",
-        "close": 2.081
-      },
-      {
-        "date": "2026-05-13",
-        "close": 2.093
-      },
       {
         "date": "2026-05-14",
         "close": 2.105
@@ -2407,18 +2388,18 @@
       },
       {
         "date": "2026-08-05",
+        "close": 2.267
+      },
+      {
+        "date": "2026-08-06",
+        "close": 2.244
+      },
+      {
+        "date": "2026-08-07",
         "close": 2.27
       }
     ],
     "gold": [
-      {
-        "date": "2026-05-12",
-        "close": 9.806
-      },
-      {
-        "date": "2026-05-13",
-        "close": 9.804
-      },
       {
         "date": "2026-05-14",
         "close": 9.795
@@ -2654,17 +2635,17 @@
       {
         "date": "2026-08-05",
         "close": 8.64
+      },
+      {
+        "date": "2026-08-06",
+        "close": 8.795
+      },
+      {
+        "date": "2026-08-07",
+        "close": 8.89
       }
     ],
     "cpo": [
-      {
-        "date": "2026-05-12",
-        "close": 0.751
-      },
-      {
-        "date": "2026-05-13",
-        "close": 0.779
-      },
       {
         "date": "2026-05-14",
         "close": 0.772
@@ -2899,18 +2880,18 @@
       },
       {
         "date": "2026-08-05",
-        "close": 0.64
+        "close": 0.642
+      },
+      {
+        "date": "2026-08-06",
+        "close": 0.652
+      },
+      {
+        "date": "2026-08-07",
+        "close": 0.66
       }
     ],
     "semiconductor": [
-      {
-        "date": "2026-05-12",
-        "close": 1.013
-      },
-      {
-        "date": "2026-05-13",
-        "close": 1.044
-      },
       {
         "date": "2026-05-14",
         "close": 1.022
@@ -3145,14 +3126,18 @@
       },
       {
         "date": "2026-08-05",
-        "close": 1.03
+        "close": 1.033
+      },
+      {
+        "date": "2026-08-06",
+        "close": 1.047
+      },
+      {
+        "date": "2026-08-07",
+        "close": 1.08
       }
     ],
     "sp500": [
-      {
-        "date": "2026-05-13",
-        "close": 2.488
-      },
       {
         "date": "2026-05-14",
         "close": 2.489
@@ -3388,17 +3373,17 @@
       {
         "date": "2026-08-05",
         "close": 2.669
+      },
+      {
+        "date": "2026-08-06",
+        "close": 2.69
+      },
+      {
+        "date": "2026-08-07",
+        "close": 2.7
       }
     ],
     "bank": [
-      {
-        "date": "2026-05-12",
-        "close": 0.782
-      },
-      {
-        "date": "2026-05-13",
-        "close": 0.78
-      },
       {
         "date": "2026-05-14",
         "close": 0.784
@@ -3633,18 +3618,18 @@
       },
       {
         "date": "2026-08-05",
+        "close": 0.801
+      },
+      {
+        "date": "2026-08-06",
+        "close": 0.805
+      },
+      {
+        "date": "2026-08-07",
         "close": 0.8
       }
     ],
     "baijiu": [
-      {
-        "date": "2026-05-12",
-        "close": 0.469
-      },
-      {
-        "date": "2026-05-13",
-        "close": 0.462
-      },
       {
         "date": "2026-05-14",
         "close": 0.466
@@ -3879,18 +3864,18 @@
       },
       {
         "date": "2026-08-05",
+        "close": 0.437
+      },
+      {
+        "date": "2026-08-06",
+        "close": 0.434
+      },
+      {
+        "date": "2026-08-07",
         "close": 0.44
       }
     ],
     "hs300": [
-      {
-        "date": "2026-05-12",
-        "close": 4.963
-      },
-      {
-        "date": "2026-05-13",
-        "close": 5.017
-      },
       {
         "date": "2026-05-14",
         "close": 4.941
@@ -4125,7 +4110,15 @@
       },
       {
         "date": "2026-08-05",
-        "close": 4.71
+        "close": 4.714
+      },
+      {
+        "date": "2026-08-06",
+        "close": 4.709
+      },
+      {
+        "date": "2026-08-07",
+        "close": 4.75
       }
     ]
   }
